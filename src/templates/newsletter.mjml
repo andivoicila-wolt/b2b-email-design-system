@@ -1,0 +1,124 @@
+<mjml>
+  <mj-head>
+    <mj-title>Wolt Merchant Newsletter</mj-title>
+    <mj-preview>{{ customer.first_name | default: "Hey" }}, here's what's new for your business on Wolt</mj-preview>
+    
+    <!-- Dark Mode Compatibility -->
+    <mj-raw>
+      <meta name="color-scheme" content="light dark">
+      <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
+
+    <mj-attributes>
+      <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text color="#ffffff" />
+      <mj-body background-color="#010e1f" />
+      <mj-section background-color="#021738" />
+    </mj-attributes>
+
+    <mj-style>
+      @import url("https://use.typekit.net/nma8sen.css");
+
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      body, table, td, p, a, h1, h2, h3, h4, span, div {
+        font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .body-bg { background-color: #010e1f !important; }
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      a { text-decoration: none; color: #00c2e8; }
+      .body-text a { color: #00c2e8; }
+    </mj-style>
+    <mj-raw>
+      <!--[if mso]>
+      <style type="text/css">
+        body, table, td, p, a, h1, h2, h3, h4, span, div { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important; }
+      </style>
+      <![endif]-->
+    </mj-raw>
+  </mj-head>
+
+  <mj-body background-color="#010e1f" width="640px" css-class="body-bg">
+
+    <!-- Top spacer -->
+    <mj-section padding="20px 0 0 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== HEADER ======== -->
+    <mj-include path="../components/header.mjml" />
+
+    <!-- ======== HERO BANNER ======== -->
+    <mj-include path="../components/hero-banner.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="24px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== CONTENT BLOCK ======== -->
+    <mj-include path="../components/content-block.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== TWO-COLUMN GRID ======== -->
+    <mj-include path="../components/two-column-grid.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== FEATURE HIGHLIGHTS ======== -->
+    <mj-include path="../components/feature-highlights.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== FEATURE GRID ======== -->
+    <mj-include path="../components/feature-grid.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== TESTIMONIAL ======== -->
+    <mj-include path="../components/testimonial.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== CTA MODULE ======== -->
+    <mj-include path="../components/cta-module.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== FOOTER ======== -->
+    <mj-include path="../components/footer.mjml" />
+
+    <!-- Bottom spacer -->
+    <mj-section padding="0 0 20px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

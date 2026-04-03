@@ -1,0 +1,44 @@
+<!-- ============================================
+     MODULE: Operational Alert
+     Supports: Warning/info icon, bold header, body text, action button
+     ============================================ -->
+<mj-section background-color="#451a03" padding="28px 32px" border-radius="10px" border="1px solid #92400e">
+  <mj-column width="8%" vertical-align="top" padding="0">
+    <mj-text font-size="22px" padding="0" align="center">
+      ⚠️
+    </mj-text>
+  </mj-column>
+  <mj-column width="92%" padding="0 0 0 8px">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#fbbf24" line-height="22px" padding="0 0 8px 0">
+      Action required: Update your payment details
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15px" font-weight="400" color="#fef3c7" line-height="24px" padding="0 0 16px 0">
+      Your current payment method will expire on {{ customer.payment_expiry | default: "the 15th" }}. Please update it to avoid disruption to your payouts.
+    </mj-text>
+    <mj-button background-color="#92400e" color="#ffffff" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="600" border-radius="6px" inner-padding="10px 24px" padding="0" align="left" href="#">
+      Update now
+    </mj-button>
+  </mj-column>
+</mj-section>
+
+<!-- Spacer / Divider between alerts if used together -->
+<mj-section padding="16px 0" background-color="transparent">
+  <mj-column><mj-spacer height="1px" /></mj-column>
+</mj-section>
+
+<!-- Info variant: Deep Blue -->
+<mj-section background-color="#1e3a8a" padding="28px 32px" border-radius="10px" border="1px solid #1e40af">
+  <mj-column width="8%" vertical-align="top" padding="0">
+    <mj-text font-size="22px" padding="0" align="center">
+      ℹ️
+    </mj-text>
+  </mj-column>
+  <mj-column width="92%" padding="0 0 0 8px">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#60a5fa" line-height="22px" padding="0 0 8px 0">
+      Scheduled maintenance: April 12, 02:00–04:00 EET
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15px" font-weight="400" color="#dbeafe" line-height="24px" padding="0">
+      The Merchant Portal will be briefly unavailable. Orders will continue processing normally on the Wolt app.
+    </mj-text>
+  </mj-column>
+</mj-section>

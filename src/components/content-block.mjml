@@ -1,0 +1,28 @@
+<!-- ============================================
+     MODULE: Content Block
+     Supports: H2 title, paragraph, optional bullets, optional CTA
+     ============================================ -->
+<mj-section background-color="#021738" padding="40px 40px 36px 40px">
+  <mj-column width="100%">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" line-height="18px" padding="0 0 8px 0" text-transform="uppercase" letter-spacing="1.5px">
+      Product Update
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24px" font-weight="700" color="#ffffff" line-height="30px" padding="0 0 16px 0">
+      A smarter way to manage your menu
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="rgba(255,255,255,0.78)" line-height="26px" padding="0 0 20px 0">
+      We've redesigned the menu editor in the Merchant Portal. Now it's easier to add items, update prices, and organize your categories — all in one place.
+    </mj-text>
+    <!-- Optional bullet list -->
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15px" font-weight="400" color="rgba(255,255,255,0.78)" line-height="28px" padding="0 0 24px 0">
+      <ul style="margin:0; padding-left:20px; color:rgba(255,255,255,0.78);">
+        <li style="margin-bottom:8px;">Drag-and-drop item reordering</li>
+        <li style="margin-bottom:8px;">Bulk price editing across categories</li>
+        <li>Real-time preview before publishing</li>
+      </ul>
+    </mj-text>
+    <mj-button background-color="transparent" color="#ffffff" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15px" font-weight="600" border="2px solid #00c2e8" border-radius="8px" inner-padding="12px 28px" padding="0" align="left" href="#">
+      Learn more →
+    </mj-button>
+  </mj-column>
+</mj-section>

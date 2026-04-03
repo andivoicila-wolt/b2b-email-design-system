@@ -1,0 +1,88 @@
+<mjml>
+  <mj-head>
+    <mj-title>Wolt Product Launch</mj-title>
+    <mj-preview>A powerful new feature is here for your business</mj-preview>
+
+    <!-- Dark Mode Compatibility -->
+    <mj-raw>
+      <meta name="color-scheme" content="light dark">
+      <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
+
+    <mj-attributes>
+      <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text color="#ffffff" />
+      <mj-body background-color="#010e1f" />
+      <mj-section background-color="#021738" />
+    </mj-attributes>
+    <mj-style>
+      @import url("https://use.typekit.net/nma8sen.css");
+
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      body, table, td, p, a, h1, h2, h3, h4, span, div {
+        font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      a { text-decoration: none; color: #00c2e8; }
+    </mj-style>
+    <mj-raw>
+      <!--[if mso]>
+      <style type="text/css">
+        body, table, td, p, a, h1, h2, h3, h4, span, div { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important; }
+      </style>
+      <![endif]-->
+    </mj-raw>
+  </mj-head>
+
+  <mj-body background-color="#010e1f" width="640px">
+
+    <mj-section padding="20px 0 0 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== HEADER ======== -->
+    <mj-include path="../components/header.mjml" />
+
+    <!-- ======== HERO BANNER ======== -->
+    <mj-include path="../components/hero-banner.mjml" />
+
+    <mj-section padding="24px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== FEATURE HIGHLIGHTS ======== -->
+    <mj-include path="../components/feature-highlights.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== VIDEO EMBED ======== -->
+    <mj-include path="../components/video-embed.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== CTA MODULE ======== -->
+    <mj-include path="../components/cta-module.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== FOOTER ======== -->
+    <mj-include path="../components/footer.mjml" />
+
+    <mj-section padding="0 0 20px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

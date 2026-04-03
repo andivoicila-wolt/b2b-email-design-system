@@ -1,0 +1,48 @@
+<!-- ============================================
+     MODULE: Footer
+     Includes: Unsubscribe, contact, legal, social, country links
+     ============================================ -->
+<mj-section background-color="#021738" padding="40px 40px 20px 40px" border-radius="12px 12px 0 0">
+  <mj-column width="100%">
+    <mj-image width="180px" src="assets/logos/WoltMerchant_Pill_logo_RGB.png" alt="Wolt Merchant" align="left" padding="0 0 24px 0" />
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="24px" padding="0 0 24px 0">
+      Questions? Visit the <a href="https://merchant-support.wolt.com" style="color:#00c2e8; text-decoration:none; font-weight:600;">Merchant Support Center</a> or reply directly to this email.
+    </mj-text>
+    <mj-divider border-color="rgba(255,255,255,0.15)" border-width="1px" padding="0 0 24px 0" />
+  </mj-column>
+</mj-section>
+<mj-section background-color="#021738" padding="0 40px">
+  <mj-column width="50%">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="rgba(255,255,255,0.5)" line-height="22px" padding="0 0 8px 0" text-transform="uppercase" letter-spacing="1px">
+      Resources
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="28px" padding="0 0 20px 0">
+      <a href="#" style="color:rgba(255,255,255,0.7); text-decoration:none;">Merchant Learning Center</a><br/>
+      <a href="#" style="color:rgba(255,255,255,0.7); text-decoration:none;">Merchant Portal</a><br/>
+      <a href="#" style="color:rgba(255,255,255,0.7); text-decoration:none;">Wolt Blog for Merchants</a>
+    </mj-text>
+  </mj-column>
+  <mj-column width="50%">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="rgba(255,255,255,0.5)" line-height="22px" padding="0 0 8px 0" text-transform="uppercase" letter-spacing="1px">
+      Connect
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="28px" padding="0 0 20px 0">
+      <a href="https://www.linkedin.com/company/wolt-oy/" style="color:rgba(255,255,255,0.7); text-decoration:none;">LinkedIn</a><br/>
+      <a href="https://www.instagram.com/wolt/" style="color:rgba(255,255,255,0.7); text-decoration:none;">Instagram</a><br/>
+      <a href="https://twitter.com/wabortwolt" style="color:rgba(255,255,255,0.7); text-decoration:none;">X (Twitter)</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section background-color="#021738" padding="0 40px 40px 40px" border-radius="0 0 12px 12px">
+  <mj-column width="100%">
+    <mj-divider border-color="rgba(255,255,255,0.15)" border-width="1px" padding="16px 0 24px 0" />
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12px" font-weight="400" color="rgba(255,255,255,0.4)" line-height="20px" padding="0 0 8px 0" align="center">
+      Wolt Enterprises Oy · Pohjoisesplanadi 39, 00100 Helsinki, Finland
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12px" font-weight="400" color="rgba(255,255,255,0.4)" line-height="20px" padding="0" align="center">
+      You're receiving this because you're a Wolt merchant. 
+      <a href="{% unsubscribe_url %}" style="color:#00c2e8; text-decoration:none;">Unsubscribe</a> · 
+      <a href="#" style="color:rgba(255,255,255,0.5); text-decoration:none;">Email preferences</a>
+    </mj-text>
+  </mj-column>
+</mj-section>

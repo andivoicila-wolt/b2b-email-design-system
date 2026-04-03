@@ -1,0 +1,155 @@
+<mjml>
+  <mj-head>
+    <mj-title>Wolt B2B Modular Component Library</mj-title>
+    <mj-preview>Explore the full suite of merchant-ready email blocks.</mj-preview>
+
+    <!-- Dark Mode Compatibility -->
+    <mj-raw>
+      <meta name="color-scheme" content="light dark">
+      <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
+
+    <mj-attributes>
+      <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text color="#ffffff" />
+      <mj-body background-color="#010e1f" />
+      <mj-section background-color="#021738" />
+    </mj-attributes>
+    <mj-style>
+      @import url("https://use.typekit.net/nma8sen.css");
+
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      body, table, td, p, a, h1, h2, h3, h4, span, div {
+        font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+      }
+
+      .logo-opacity img {
+        opacity: 0.6 !important;
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      a { text-decoration: none; color: #00c2e8; }
+    </mj-style>
+    <mj-raw>
+      <!--[if mso]>
+      <style type="text/css">
+        body, table, td, p, a, h1, h2, h3, h4, span, div { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important; }
+      </style>
+      <![endif]-->
+    </mj-raw>
+  </mj-head>
+
+  <mj-body background-color="#010e1f" width="640px">
+
+    <mj-section padding="20px 0 0 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 0. HEADER -->
+    <mj-include path="../components/header.mjml" />
+
+    <!-- 1. HERO BANNER -->
+    <mj-include path="../components/hero-banner.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 2. ROI / STATS (New) -->
+    <mj-include path="../components/roi-stats.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 3. WEBINAR / EVENT (New) -->
+    <mj-include path="../components/webinar-module.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 4. CONTENT BLOCK -->
+    <mj-include path="../components/content-block.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 5. PRODUCT CHECKLIST (New) -->
+    <mj-include path="../components/product-checklist.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 6. TWO-COLUMN GRID -->
+    <mj-include path="../components/two-column-grid.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 7. SOCIAL PROOF logo Bar (New) -->
+    <mj-include path="../components/social-proof.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 8. VIDEO EMBED -->
+    <mj-include path="../components/video-embed.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 9. RESOURCE HIGHLIGHT (New) -->
+    <mj-include path="../components/resource-highlight.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 10. REFERRAL MODULE (New) -->
+    <mj-include path="../components/referral-module.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 11. APP DOWNLOAD BAR (New) -->
+    <mj-include path="../components/app-download.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 12. TESTIMONIAL -->
+    <mj-include path="../components/testimonial.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 13. OPERATIONAL ALERT -->
+    <mj-include path="../components/operational-alert.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 14. FOOTER -->
+    <mj-include path="../components/footer.mjml" />
+
+    <mj-section padding="0 0 20px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

@@ -1,0 +1,19 @@
+<!-- ============================================
+     MODULE: Header
+     Wolt Merchant Email Design System
+     ============================================ -->
+<mj-section background-color="#021738" padding="24px 30px 20px 30px" border-radius="12px 12px 0 0">
+  <mj-column width="50%" vertical-align="middle">
+    <mj-image width="220px" src="assets/logos/WoltMerchant_Pill_logo_RGB.png" alt="Wolt Merchant" align="left" padding="0" />
+  </mj-column>
+  <mj-column width="50%" vertical-align="middle">
+    <mj-text align="right" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" padding="0" letter-spacing="0.5px" text-transform="uppercase">
+      Merchant Newsletter
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section background-color="#021738" padding="0">
+  <mj-column>
+    <mj-divider border-color="rgba(255,255,255,0.1)" border-width="1px" padding="0 30px" />
+  </mj-column>
+</mj-section>

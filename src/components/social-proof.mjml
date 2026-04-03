@@ -1,0 +1,20 @@
+<!-- ============================================
+     MODULE: Social Proof / Logo Bar
+     Supports: Headline, Row of logos/icons
+     ============================================ -->
+<mj-section background-color="#021738" padding="48px 40px" border-radius="12px">
+  <mj-column width="100%">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" color="#00c2e8" line-height="20px" padding="0 0 24px 0" align="center" text-transform="uppercase" letter-spacing="1px">
+      Trusted by 10,000+ local merchants
+    </mj-text>
+  </mj-column>
+  <mj-column width="33%">
+    <mj-image src="https://cdn.wolt.com/assets/images/partner-logo-placeholder-1.png" alt="Merchant partner" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
+  </mj-column>
+  <mj-column width="33%">
+    <mj-image src="https://cdn.wolt.com/assets/images/partner-logo-placeholder-2.png" alt="Merchant partner" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
+  </mj-column>
+  <mj-column width="33%">
+    <mj-image src="https://cdn.wolt.com/assets/images/partner-logo-placeholder-3.png" alt="Merchant partner" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
+  </mj-column>
+</mj-section>

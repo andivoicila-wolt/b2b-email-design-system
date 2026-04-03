@@ -1,0 +1,43 @@
+<!-- ============================================
+     MODULE: Feature Highlights
+     Supports: 2-3 column icon + text grid
+     ============================================ -->
+<mj-section background-color="#1e293b" padding="44px 30px 20px 30px" border-radius="12px 12px 0 0">
+  <mj-column width="100%">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" line-height="18px" padding="0 0 8px 10px" text-transform="uppercase" letter-spacing="1.5px">
+      What's New
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24px" font-weight="700" color="#ffffff" line-height="30px" padding="0 0 30px 10px">
+      This month's highlights
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section background-color="#1e293b" padding="0 20px 44px 20px" border-radius="0 0 12px 12px">
+  <mj-column width="33.33%" padding="0 10px">
+    <mj-image src="https://img.icons8.com/fluency/96/restaurant-menu.png" width="48px" padding="0 0 12px 0" align="left" />
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 8px 0">
+      Menu Editor 2.0
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="22px" padding="0">
+      Drag-and-drop your items and manage categories faster than ever.
+    </mj-text>
+  </mj-column>
+  <mj-column width="33.33%" padding="0 10px">
+    <mj-image src="https://img.icons8.com/fluency/96/combo-chart.png" width="48px" padding="0 0 12px 0" align="left" />
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 8px 0">
+      Advanced Analytics
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="22px" padding="0">
+      Get deeper insights into your sales performance and peak hours.
+    </mj-text>
+  </mj-column>
+  <mj-column width="33.33%" padding="0 10px">
+    <mj-image src="https://img.icons8.com/fluency/96/megaphone.png" width="48px" padding="0 0 12px 0" align="left" />
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 8px 0">
+      Wolt Ads
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="22px" padding="0">
+      Promote your venue to more customers with targeted in-app campaigns.
+    </mj-text>
+  </mj-column>
+</mj-section>

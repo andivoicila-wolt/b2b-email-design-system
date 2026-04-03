@@ -1,0 +1,21 @@
+{
+  "name": "wolt-b2b-email-system",
+  "version": "1.0.0",
+  "description": "Wolt B2B Merchant Email Design System — Modular MJML templates for Customer.io",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "watch:mjml": "nodemon --watch src --ext mjml --exec \"node build.js\"",
+    "watch:serve": "browser-sync start --server 'dist' --files 'dist/*.html' --no-open --no-notify",
+    "dev": "npm-run-all build --parallel watch:*",
+    "share": "lt --port 3000 --subdomain wolt-merchant-email",
+    "build:single": "mjml"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.0",
+    "localtunnel": "^2.0.2",
+    "mjml": "^4.15.3",
+    "nodemon": "^3.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

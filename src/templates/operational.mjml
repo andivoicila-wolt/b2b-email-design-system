@@ -1,0 +1,91 @@
+<mjml>
+  <mj-head>
+    <mj-title>Wolt — Action Required</mj-title>
+    <mj-preview>Important: an update regarding your Wolt account</mj-preview>
+
+    <!-- Dark Mode Compatibility -->
+    <mj-raw>
+      <meta name="color-scheme" content="light dark">
+      <meta name="supported-color-schemes" content="light dark">
+    </mj-raw>
+
+    <mj-attributes>
+      <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text color="#ffffff" />
+      <mj-body background-color="#010e1f" />
+      <mj-section background-color="#021738" />
+    </mj-attributes>
+    <mj-style>
+      @import url("https://use.typekit.net/nma8sen.css");
+
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+
+      body, table, td, p, a, h1, h2, h3, h4, span, div {
+        font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      a { text-decoration: none; color: #00c2e8; }
+    </mj-style>
+    <mj-raw>
+      <!--[if mso]>
+      <style type="text/css">
+        body, table, td, p, a, h1, h2, h3, h4, span, div { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important; }
+      </style>
+      <![endif]-->
+    </mj-raw>
+  </mj-head>
+
+  <mj-body background-color="#010e1f" width="640px">
+
+    <mj-section padding="20px 0 0 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== HEADER ======== -->
+    <mj-include path="../components/header.mjml" />
+
+    <!-- Spacer -->
+    <mj-section padding="24px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== OPERATIONAL ALERT ======== -->
+    <mj-section background-color="#ffffff" padding="40px 30px">
+      <mj-column width="100%">
+        <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#021738" line-height="34px" padding="0 0 16px 0">
+          {% if customer.first_name %}{{ customer.first_name }}, we{% else %}We{% endif %} need your attention
+        </mj-text>
+        <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0 0 28px 0">
+          Please review the following notice regarding your account.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Inclusion outside column since module contains its own mj-sections -->
+    <mj-include path="../components/operational-alert.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== CTA MODULE ======== -->
+    <mj-include path="../components/cta-module.mjml" />
+
+    <mj-section padding="12px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- ======== FOOTER ======== -->
+    <mj-include path="../components/footer.mjml" />
+
+    <mj-section padding="0 0 20px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

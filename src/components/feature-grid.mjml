@@ -1,0 +1,40 @@
+<!-- ============================================
+     MODULE: Feature Grid / Carousel
+     Supports: Section title + 2-4 card grid with image, title, desc, link
+     ============================================ -->
+<mj-section background-color="#021738" padding="44px 30px 12px 30px" border-radius="12px 12px 0 0">
+  <mj-column width="100%">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" line-height="18px" padding="0 0 8px 10px" text-transform="uppercase" letter-spacing="1.5px">
+      From the community
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24px" font-weight="700" color="#ffffff" line-height="30px" padding="0 0 30px 10px">
+      Loved by Locals
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section background-color="#021738" padding="0 20px 44px 20px" border-radius="0 0 12px 12px">
+  <mj-column width="50%" padding="0 10px 20px 10px">
+    <mj-image src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Restaurant 1" border-radius="10px" padding="0 0 14px 0" fluid-on-mobile="true" />
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 6px 0">
+      Ravintola Helsinki
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="20px" padding="0 0 10px 0">
+      Finnish cuisine with a modern twist, serving the heart of Helsinki.
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="600" color="#00c2e8" padding="0">
+      <a href="#" style="color:#00c2e8; text-decoration:none;">View profile →</a>
+    </mj-text>
+  </mj-column>
+  <mj-column width="50%" padding="0 10px 20px 10px">
+    <mj-image src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" alt="Restaurant 2" border-radius="10px" padding="0 0 14px 0" fluid-on-mobile="true" />
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 6px 0">
+      Café Boulevard
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="20px" padding="0 0 10px 0">
+      Artisanal coffee and pastries, a neighborhood favorite since 2018.
+    </mj-text>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="600" color="#00c2e8" padding="0">
+      <a href="#" style="color:#00c2e8; text-decoration:none;">View profile →</a>
+    </mj-text>
+  </mj-column>
+</mj-section>

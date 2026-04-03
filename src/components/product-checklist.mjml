@@ -1,0 +1,29 @@
+<!-- ============================================
+     MODULE: Product Feature Checklist
+     Supports: Headline, Icon-based list items
+     ============================================ -->
+<mj-section background-color="#021738" padding="48px 40px" border-radius="12px">
+  <mj-column width="100%">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24px" font-weight="700" color="#ffffff" line-height="30px" padding="0 0 24px 0">
+      Everything you need to succeed
+    </mj-text>
+    <mj-table padding="0">
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">Real-time order tracking</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">Menu editor with instant sync</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">In-depth sales analytics</td>
+      </tr>
+      <tr>
+        <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">24/7 Merchant Support</td>
+      </tr>
+    </mj-table>
+  </mj-column>
+</mj-section>
