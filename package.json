@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
+    "icons:validate": "node scripts/validate-icon-manifest.js",
     "sync:docs": "node scripts/sync-docs.js",
     "publish:pages": "npm run build && npm run sync:docs",
     "watch:mjml": "nodemon --watch src --ext mjml --exec \"node build.js\"",

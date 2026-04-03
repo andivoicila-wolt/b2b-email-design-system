@@ -102,6 +102,22 @@ On each push to `main`, it will:
 Your hosted preview URL will be:
 `https://<your-user-or-org>.github.io/<repo-name>/`
 
+## Wolt Icon System (Bynder)
+
+Use `assets/icons/` as the source of truth for icon assets.
+
+1. Export raw icons from Bynder into:
+   `assets/icons/source/svg` and `assets/icons/source/png`
+2. Prepare production variants for:
+   `assets/icons/web/*` and `assets/icons/email/*`
+3. Register each icon in:
+   `assets/icons/icon-manifest.json`
+4. Validate before commit:
+   `npm run icons:validate`
+
+Detailed conventions are documented in:
+`assets/icons/README.md`
+
 ## Adobe Fonts Setup
 
 Replace `your-project-id` in each template's `<mj-style>` block with your actual Adobe Fonts project ID:
