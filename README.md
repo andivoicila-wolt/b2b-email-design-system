@@ -2,6 +2,9 @@
 
 A modular, responsive email template system built with **MJML** for use in **Customer.io**.
 
+The folder `current_versions/` is the audit baseline of currently sent emails.  
+This design system maps those real-world formats into reusable modules so teams can build new sends quickly and consistently.
+
 ## Quick Start
 
 ```bash
@@ -72,6 +75,35 @@ This is especially important for modules split across multiple `<mj-section>` bl
 3. Mix and match modules using `<mj-include path="../components/MODULE.mjml" />`
 4. Run `npm run build` to compile
 
+## Modular Build Standard (Customer.io)
+
+Use the same shared module language across all campaigns:
+
+- `M00`: Header
+- `M01`: Hero Banner
+- `M02`: Content Block
+- `M03`: Feature / Education Blocks
+- `M04`: Proof Blocks (ROI, testimonial, social proof)
+- `M05`: Conversion Blocks (CTA, referral, app download)
+- `M06`: Operational Alert
+- `M99`: Footer
+
+### Category recipes (based on `current_versions/`)
+
+- Survey emails: `M00 -> M01 -> M02 -> M05 -> M99`
+- Product emails: `M00 -> M01 -> M03 -> M05 -> M99`
+- Growth & upsell emails: `M00 -> M01 -> M02 -> M04 -> M05 -> M99`
+- Newsletters: `M00 -> M01 -> M02 -> M03 -> M04 -> M05 -> M99`
+- Operational emails: `M00 -> M06 -> (M05 optional) -> M99`
+
+### 5-step build flow for Customer.io
+
+1. Choose one category recipe above (never start from blank).
+2. Start from the closest base template in `src/templates/`.
+3. Replace content slots only first (headline, body copy, image, CTA URL, locale/legal).
+4. Validate theme and mobile rendering in local preview.
+5. Copy compiled HTML from `dist/` into Customer.io.
+
 ### Deploying to Customer.io
 1. Run `npm run build`
 2. Open the compiled `.html` file from `dist/`
@@ -101,6 +133,12 @@ On each push to `main`, it will:
 
 Your hosted preview URL will be:
 `https://<your-user-or-org>.github.io/<repo-name>/`
+
+The dashboard includes:
+- preview launcher
+- design tokens
+- category/module coverage matrix
+- Customer.io builder playbook (`playbook.html`)
 
 ## Wolt Icon System (Bynder)
 

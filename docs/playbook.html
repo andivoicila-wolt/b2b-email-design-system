@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wolt Merchant Email System — Customer.io Playbook</title>
+  <style>
+    @import url("https://use.typekit.net/nma8sen.css");
+
+    :root {
+      --bg: #f0f1f4;
+      --text: #021738;
+      --muted: #4a5568;
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --border: #dbe2ec;
+      --accent: #00c2e8;
+      --shadow: 0 8px 22px rgba(2, 23, 56, 0.1);
+      --ok: #1a936f;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0b1424;
+      --text: #e6edf8;
+      --muted: #b7c5d9;
+      --surface: #14243f;
+      --surface-2: #1a2f50;
+      --border: #29466f;
+      --accent: #53d5f1;
+      --shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
+      --ok: #67d3ae;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 32px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    h1 { margin: 0; font-size: 28px; line-height: 1.15; }
+    .sub { margin: 8px 0 0 0; color: var(--muted); font-size: 15px; line-height: 1.5; }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      background: transparent;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn:hover { border-color: var(--accent); }
+
+    .section {
+      margin-top: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface-2);
+      padding: 16px;
+    }
+
+    .section h2 {
+      margin: 0 0 10px 0;
+      font-size: 17px;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+
+    table {
+      width: 100%;
+      min-width: 860px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      padding: 10px 12px;
+      vertical-align: top;
+    }
+
+    th {
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .chip {
+      display: inline-block;
+      border: 1px solid color-mix(in srgb, var(--ok) 40%, transparent);
+      color: var(--ok);
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    .foot {
+      margin-top: 18px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      body { padding: 16px; }
+      .wrap { padding: 16px; }
+      .top { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Customer.io Builder Playbook</h1>
+        <p class="sub">Modular rules to build any Wolt merchant email in a few fast, repeatable steps.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="index.html">Back to dashboard</a>
+        <button id="theme-toggle" class="btn" type="button">Switch to dark mode</button>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Quick Build SOP (5 Steps)</h2>
+      <ol class="list">
+        <li>Pick one recipe row from the category matrix below.</li>
+        <li>Open the corresponding template preview and duplicate that HTML as your base.</li>
+        <li>Replace content slots only: headline, copy, image, CTA URL, legal/footer locale.</li>
+        <li>Run preview in both themes and mobile width before exporting to Customer.io.</li>
+        <li>If a needed block does not exist, add it to the component library first, then reuse it.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Module IDs (Shared Language)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Module</th>
+              <th>Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="chip">M00</span></td><td>Header</td><td>Always first. Brand and context anchor.</td></tr>
+            <tr><td><span class="chip">M01</span></td><td>Hero Banner</td><td>Primary value proposition + first CTA.</td></tr>
+            <tr><td><span class="chip">M02</span></td><td>Content Block</td><td>Message framing, bullet points, narrative.</td></tr>
+            <tr><td><span class="chip">M03</span></td><td>Feature Highlights / Grid</td><td>Benefits, features, and product explainer sections.</td></tr>
+            <tr><td><span class="chip">M04</span></td><td>Proof Blocks (ROI / Testimonial / Social)</td><td>Trust and outcome reinforcement.</td></tr>
+            <tr><td><span class="chip">M05</span></td><td>Conversion Blocks (CTA / Referral / Download)</td><td>Single clear conversion target.</td></tr>
+            <tr><td><span class="chip">M06</span></td><td>Operational Alert</td><td>Service incident, account update, critical notices.</td></tr>
+            <tr><td><span class="chip">M99</span></td><td>Footer</td><td>Always last. Compliance and utility links.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Current Versions -> Standard Recipes</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Observed Current Pattern</th>
+              <th>Standard Recipe (Module IDs)</th>
+              <th>Base Template</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Survey emails</td>
+              <td>Brief ask, incentive mention, confirmation CTA.</td>
+              <td>M00 -> M01 -> M02 -> M05 -> M99</td>
+              <td>Newsletter / Library</td>
+            </tr>
+            <tr>
+              <td>Product emails</td>
+              <td>Launch story, feature steps, action path.</td>
+              <td>M00 -> M01 -> M03 -> M05 -> M99</td>
+              <td>Product Launch</td>
+            </tr>
+            <tr>
+              <td>Growth & upsell emails</td>
+              <td>Opportunity narrative with one focused conversion.</td>
+              <td>M00 -> M01 -> M02 -> M04 -> M05 -> M99</td>
+              <td>Product Launch / Newsletter</td>
+            </tr>
+            <tr>
+              <td>Newsletters</td>
+              <td>Editorial flow with multi-topic sections.</td>
+              <td>M00 -> M01 -> M02 -> M03 -> M04 -> M05 -> M99</td>
+              <td>Newsletter</td>
+            </tr>
+            <tr>
+              <td>Operational emails</td>
+              <td>Status notice, impact statement, support path.</td>
+              <td>M00 -> M06 -> (M05 optional) -> M99</td>
+              <td>Operational</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Non-Negotiable Design Rules</h2>
+      <ol class="list">
+        <li>Omnes with alternates active everywhere: <code>ss01 + ss05 + ss07</code>.</li>
+        <li>Email width fixed at <code>640px</code>; no custom widths per campaign.</li>
+        <li>One primary CTA style across all modules; no ad-hoc button variants.</li>
+        <li>Card radius logic: top <code>12 12 0 0</code>, middle none, bottom <code>0 0 12 12</code>, single <code>12</code>.</li>
+        <li>Inter-card spacing: <code>16px</code>; major section break: <code>24px</code>.</li>
+      </ol>
+    </section>
+
+    <div class="foot">Wolt B2B Creative Production · Modular Email System</div>
+  </div>
+
+  <script>
+    (function () {
+      var key = 'wolt-email-preview-theme';
+      var button = document.getElementById('theme-toggle');
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        button.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+      }
+
+      var saved = localStorage.getItem(key);
+      var initial = saved === 'dark' || saved === 'light' ? saved : 'light';
+      setTheme(initial);
+
+      button.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme') || 'light';
+        var next = current === 'dark' ? 'light' : 'dark';
+        localStorage.setItem(key, next);
+        setTheme(next);
+      });
+    })();
+  </script>
+</body>
+</html>

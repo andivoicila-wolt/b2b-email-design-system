@@ -215,7 +215,7 @@
     <div class="header">
       <div>
         <h1>Wolt Merchant Email System</h1>
-        <p class="sub">Template previews and newsletter design-system rules in one place.</p>
+        <p class="sub">Template previews, modular system rules, and Customer.io build guidance in one place.</p>
       </div>
       <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark mode</button>
     </div>
@@ -256,6 +256,15 @@
               <div>
                 <div class="template-name">Component Library</div>
                 <div class="template-desc">All reusable modules for rapid campaign assembly.</div>
+              </div>
+              <span class="arrow">→</span>
+            </a>
+          </li>
+          <li class="template-item">
+            <a href="playbook.html" class="template-link">
+              <div>
+                <div class="template-name">Customer.io Builder Playbook</div>
+                <div class="template-desc">Step-by-step modular assembly guide and recipe map.</div>
               </div>
               <span class="arrow">→</span>
             </a>
@@ -330,6 +339,64 @@
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section class="card">
+        <h2>Module Taxonomy (Standard)</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Module Group</th>
+                <th>Modules</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Foundation</td><td>Header, Footer</td><td>Brand frame, legal baseline, universal consistency.</td></tr>
+              <tr><td>Lead Story</td><td>Hero Banner, Content Block</td><td>Primary campaign message and first CTA.</td></tr>
+              <tr><td>Proof & Education</td><td>Feature Highlights, Feature Grid, Two-Column Grid, Video Embed, Resource Highlight</td><td>Explain value, show workflow, reduce uncertainty.</td></tr>
+              <tr><td>Performance & Trust</td><td>ROI Stats, Social Proof, Testimonial</td><td>Demonstrate outcomes and merchant validation.</td></tr>
+              <tr><td>Action Modules</td><td>CTA Module, Referral Module, App Download</td><td>Drive conversion and follow-up behavior.</td></tr>
+              <tr><td>Lifecycle / Service</td><td>Operational Alert, Product Checklist, Webinar Module</td><td>Handle operational, onboarding, or event communications.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Current Versions Coverage</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Current Category</th>
+                <th>Representative Pattern</th>
+                <th>Standard Module Recipe</th>
+                <th>Primary Template Base</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Survey emails</td><td>Short ask + incentive + proof card</td><td>Header -> Hero Banner -> Content Block -> Two-Column Grid -> CTA Module -> Footer</td><td>Newsletter / Library</td></tr>
+              <tr><td>Product emails</td><td>Feature announcement + how-to steps</td><td>Header -> Hero Banner -> Feature Highlights -> Product Checklist -> CTA Module -> Footer</td><td>Product Launch</td></tr>
+              <tr><td>Growth & upsell emails</td><td>Business opportunity + persuasive CTA</td><td>Header -> Hero Banner -> Content Block -> ROI Stats or Testimonial -> CTA Module -> Footer</td><td>Product Launch / Newsletter</td></tr>
+              <tr><td>Newsletters</td><td>Multi-section editorial + multiple offers</td><td>Header -> Hero Banner -> Content Block -> Feature Grid -> Resource Highlight -> CTA Module -> Footer</td><td>Newsletter</td></tr>
+              <tr><td>Operational emails</td><td>Critical account update or service notice</td><td>Header -> Operational Alert -> (Optional CTA Module) -> Footer</td><td>Operational</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Customer.io Build Flow</h2>
+        <ol class="rule-list">
+          <li>Pick one base recipe from the category matrix above (do not start from scratch).</li>
+          <li>Swap only module content first (copy, image, CTA target) before changing structure.</li>
+          <li>Keep component order stable unless campaign goal requires a change in narrative flow.</li>
+          <li>Use one primary CTA and one secondary CTA max per email to protect click clarity.</li>
+          <li>Validate in preview for dark/light and mobile before copying final HTML into Customer.io.</li>
+          <li>For new use-cases, add modules to Library first, then promote to a named template.</li>
+        </ol>
       </section>
     </div>
   </div>
