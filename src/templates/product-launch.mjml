@@ -59,28 +59,28 @@
     <!-- ======== FEATURE HIGHLIGHTS ======== -->
     <mj-include path="../components/feature-highlights.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- ======== VIDEO EMBED ======== -->
     <mj-include path="../components/video-embed.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- ======== CTA MODULE ======== -->
     <mj-include path="../components/cta-module.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- ======== FOOTER ======== -->
     <mj-include path="../components/footer.mjml" />
 
-    <mj-section padding="0 0 20px 0" background-color="transparent">
+    <mj-section padding="0 0 24px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 

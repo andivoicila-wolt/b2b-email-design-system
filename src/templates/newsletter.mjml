@@ -68,7 +68,7 @@
     <mj-include path="../components/content-block.mjml" />
 
     <!-- Spacer -->
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
@@ -76,7 +76,7 @@
     <mj-include path="../components/two-column-grid.mjml" />
 
     <!-- Spacer -->
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
@@ -84,7 +84,7 @@
     <mj-include path="../components/feature-highlights.mjml" />
 
     <!-- Spacer -->
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
@@ -92,7 +92,7 @@
     <mj-include path="../components/feature-grid.mjml" />
 
     <!-- Spacer -->
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
@@ -100,7 +100,7 @@
     <mj-include path="../components/testimonial.mjml" />
 
     <!-- Spacer -->
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
@@ -108,7 +108,7 @@
     <mj-include path="../components/cta-module.mjml" />
 
     <!-- Spacer -->
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
@@ -116,7 +116,7 @@
     <mj-include path="../components/footer.mjml" />
 
     <!-- Bottom spacer -->
-    <mj-section padding="0 0 20px 0" background-color="transparent">
+    <mj-section padding="0 0 24px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 

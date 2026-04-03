@@ -56,84 +56,84 @@
     <!-- 1. HERO BANNER -->
     <mj-include path="../components/hero-banner.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 2. ROI / STATS (New) -->
     <mj-include path="../components/roi-stats.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 3. WEBINAR / EVENT (New) -->
     <mj-include path="../components/webinar-module.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 4. CONTENT BLOCK -->
     <mj-include path="../components/content-block.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 5. PRODUCT CHECKLIST (New) -->
     <mj-include path="../components/product-checklist.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 6. TWO-COLUMN GRID -->
     <mj-include path="../components/two-column-grid.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 7. SOCIAL PROOF logo Bar (New) -->
     <mj-include path="../components/social-proof.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 8. VIDEO EMBED -->
     <mj-include path="../components/video-embed.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 9. RESOURCE HIGHLIGHT (New) -->
     <mj-include path="../components/resource-highlight.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 10. REFERRAL MODULE (New) -->
     <mj-include path="../components/referral-module.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 11. APP DOWNLOAD BAR (New) -->
     <mj-include path="../components/app-download.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- 12. TESTIMONIAL -->
     <mj-include path="../components/testimonial.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
@@ -147,7 +147,7 @@
     <!-- 14. FOOTER -->
     <mj-include path="../components/footer.mjml" />
 
-    <mj-section padding="0 0 20px 0" background-color="transparent">
+    <mj-section padding="0 0 24px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 

@@ -66,24 +66,28 @@
       </mj-column>
     </mj-section>
 
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
     <!-- Inclusion outside column since module contains its own mj-sections -->
     <mj-include path="../components/operational-alert.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- ======== CTA MODULE ======== -->
     <mj-include path="../components/cta-module.mjml" />
 
-    <mj-section padding="12px 0" background-color="transparent">
+    <mj-section padding="16px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
     <!-- ======== FOOTER ======== -->
     <mj-include path="../components/footer.mjml" />
 
-    <mj-section padding="0 0 20px 0" background-color="transparent">
+    <mj-section padding="0 0 24px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
 
