@@ -1,123 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wolt Merchant Email System — Dashboard</title>
-    <style>
-        @import url("https://use.typekit.net/nma8sen.css");
-        :root {
-            --bg: #f0f1f4;
-            --text: #021738;
-            --surface: #ffffff;
-            --surface-border: #e8eaed;
-            --surface-hover: #f0faff;
-            --shadow: 0 4px 6px rgba(0,0,0,0.05);
-            --muted-text: #4a5568;
-            --footer-text: #9ca3af;
-            --accent: #00c2e8;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wolt Merchant Email System — Dashboard</title>
+  <style>
+    @import url("https://use.typekit.net/nma8sen.css");
 
-        [data-theme="dark"] {
-            --bg: #0b1424;
-            --text: #e6edf8;
-            --surface: #14243f;
-            --surface-border: #254067;
-            --surface-hover: #1b3154;
-            --shadow: 0 10px 24px rgba(0,0,0,0.35);
-            --muted-text: #b7c5d9;
-            --footer-text: #8ca0bf;
-            --accent: #53d5f1;
-        }
+    :root {
+      --bg: #f0f1f4;
+      --text: #021738;
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --surface-border: #dbe2ec;
+      --surface-hover: #eef7fc;
+      --shadow: 0 8px 20px rgba(2, 23, 56, 0.08);
+      --muted-text: #4a5568;
+      --footer-text: #8b98ab;
+      --accent: #00c2e8;
+      --ok: #1a936f;
+      --no: #a0aec0;
+    }
 
-        body {
-            font-family: 'omnes-pro', Helvetica, Arial, sans-serif;
-            font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: background-color 0.2s ease, color 0.2s ease;
-        }
-        .container { max-width: 800px; width: 100%; background: var(--surface); padding: 40px; border-radius: 12px; box-shadow: var(--shadow); transition: background-color 0.2s ease, box-shadow 0.2s ease; }
-        h1 { margin-top: 0; color: var(--text); font-size: 24px; border-bottom: 2px solid var(--accent); padding-bottom: 15px; margin-bottom: 30px; }
-        .header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-        .theme-toggle { border: 1px solid var(--surface-border); background: transparent; color: var(--text); border-radius: 999px; padding: 8px 14px; font-size: 13px; cursor: pointer; }
-        .theme-toggle:hover { border-color: var(--accent); }
-        .template-list { list-style: none; padding: 0; }
-        .template-item { margin-bottom: 15px; border: 1px solid var(--surface-border); border-radius: 8px; transition: all 0.2s ease; }
-        .template-item:hover { border-color: var(--accent); background-color: var(--surface-hover); transform: translateY(-2px); }
-        .template-link { display: block; padding: 20px; text-decoration: none; color: inherit; display: flex; align-items: center; justify-content: space-between; }
-        .template-name { font-weight: 600; font-size: 18px; }
-        .template-desc { color: var(--muted-text); font-size: 14px; margin-top: 4px; }
-        .arrow { color: var(--accent); font-weight: bold; font-size: 20px; }
-        .footer { margin-top: 40px; color: var(--footer-text); font-size: 12px; text-align: center; }
-    </style>
+    [data-theme="dark"] {
+      --bg: #0b1424;
+      --text: #e6edf8;
+      --surface: #14243f;
+      --surface-2: #1a2f50;
+      --surface-border: #29466f;
+      --surface-hover: #1b3154;
+      --shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
+      --muted-text: #b7c5d9;
+      --footer-text: #8ca0bf;
+      --accent: #53d5f1;
+      --ok: #67d3ae;
+      --no: #8ca0bf;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'omnes-pro', Helvetica, Arial, sans-serif;
+      font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .container {
+      max-width: 980px;
+      width: 100%;
+      background: var(--surface);
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--surface-border);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    .sub {
+      color: var(--muted-text);
+      margin: 8px 0 0 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .theme-toggle {
+      border: 1px solid var(--surface-border);
+      background: transparent;
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 13px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .theme-toggle:hover { border-color: var(--accent); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .card {
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      background: var(--surface-2);
+      padding: 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      line-height: 1.3;
+      color: var(--text);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .kv {
+      border: 1px solid var(--surface-border);
+      border-radius: 8px;
+      padding: 10px;
+      background: var(--surface);
+    }
+
+    .kv b {
+      display: block;
+      font-size: 12px;
+      color: var(--muted-text);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .kv code {
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .rule-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted-text);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .template-list { list-style: none; padding: 0; margin: 0; }
+    .template-item {
+      margin-bottom: 10px;
+      border: 1px solid var(--surface-border);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      background: var(--surface);
+    }
+    .template-item:hover { border-color: var(--accent); background-color: var(--surface-hover); transform: translateY(-1px); }
+    .template-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: inherit;
+      gap: 12px;
+    }
+    .template-name { font-weight: 600; font-size: 16px; }
+    .template-desc { color: var(--muted-text); font-size: 13px; margin-top: 2px; }
+    .arrow { color: var(--accent); font-weight: bold; font-size: 18px; }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 780px;
+      font-size: 13px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--surface-border);
+      padding: 10px 12px;
+      text-align: left;
+      color: var(--text);
+    }
+
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted-text); }
+    tr:last-child td { border-bottom: none; }
+    .yes { color: var(--ok); font-weight: 600; }
+    .no { color: var(--no); }
+
+    .footer { margin-top: 22px; color: var(--footer-text); font-size: 12px; text-align: center; }
+
+    @media (max-width: 760px) {
+      body { padding: 18px; }
+      .container { padding: 18px; }
+      .header { align-items: flex-start; flex-direction: column; }
+      .row { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Wolt Merchant Email System</h1>
-            <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark mode</button>
-        </div>
-        <p>Select a template below to preview the design:</p>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>Wolt Merchant Email System</h1>
+        <p class="sub">Template previews and newsletter design-system rules in one place.</p>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark mode</button>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Preview Templates</h2>
         <ul class="template-list">
-            <li class="template-item">
-                <a href="preview.html?template=newsletter.html" class="template-link">
-                    <div>
-                        <div class="template-name">Newsletter Template</div>
-                        <div class="template-desc">The main quarterly merchant newsletter with all 11 modules enabled.</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-            </li>
-            <li class="template-item">
-                <a href="preview.html?template=product-launch.html" class="template-link">
-                    <div>
-                        <div class="template-name">Product Launch Template</div>
-                        <div class="template-desc">Focused on hero updates, feature highlights, and video announcements.</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-            </li>
-            <li class="template-item">
-                <a href="preview.html?template=operational.html" class="template-link">
-                    <div>
-                        <div class="template-name">Operational / Alert Template</div>
-                        <div class="template-desc">Action-required and status updates with warning/info alert boxes.</div>
-                    </div>
-                    <span class="arrow">→</span>
-                </a>
-            </li>
+          <li class="template-item">
+            <a href="preview.html?template=newsletter.html" class="template-link">
+              <div>
+                <div class="template-name">Newsletter Template</div>
+                <div class="template-desc">Quarterly merchant newsletter with full module stack.</div>
+              </div>
+              <span class="arrow">→</span>
+            </a>
+          </li>
+          <li class="template-item">
+            <a href="preview.html?template=product-launch.html" class="template-link">
+              <div>
+                <div class="template-name">Product Launch Template</div>
+                <div class="template-desc">Hero + highlights + video + CTA campaign flow.</div>
+              </div>
+              <span class="arrow">→</span>
+            </a>
+          </li>
+          <li class="template-item">
+            <a href="preview.html?template=operational.html" class="template-link">
+              <div>
+                <div class="template-name">Operational / Alert Template</div>
+                <div class="template-desc">Action-required and status messaging format.</div>
+              </div>
+              <span class="arrow">→</span>
+            </a>
+          </li>
+          <li class="template-item">
+            <a href="preview.html?template=library-preview.html" class="template-link">
+              <div>
+                <div class="template-name">Component Library</div>
+                <div class="template-desc">All reusable modules for rapid campaign assembly.</div>
+              </div>
+              <span class="arrow">→</span>
+            </a>
+          </li>
         </ul>
+      </section>
+
+      <section class="card">
+        <h2>Design Tokens</h2>
+        <div class="row">
+          <div class="kv"><b>Brand Font</b><code>'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif</code></div>
+          <div class="kv"><b>OpenType Sets</b><code>ss01 + ss05 + ss07</code></div>
+          <div class="kv"><b>Primary Surface</b><code>#021738</code></div>
+          <div class="kv"><b>Secondary Surface</b><code>#1e293b</code></div>
+          <div class="kv"><b>Body Background</b><code>#010e1f</code></div>
+          <div class="kv"><b>Accent</b><code>#00c2e8</code></div>
+          <div class="kv"><b>Max Width</b><code>640px</code></div>
+          <div class="kv"><b>Primary Button Radius</b><code>8px</code></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Typography Scale</h2>
+        <div class="row">
+          <div class="kv"><b>Display / Hero H1</b><code>32px / 38px / 700</code></div>
+          <div class="kv"><b>Section H2</b><code>24px / 30px / 700</code></div>
+          <div class="kv"><b>Subsection H3</b><code>20px / 26px / 700</code></div>
+          <div class="kv"><b>Body Large</b><code>16px / 26px / 400</code></div>
+          <div class="kv"><b>Body</b><code>15px / 24-28px / 400</code></div>
+          <div class="kv"><b>Meta / Eyebrow</b><code>13px / 18px / 600-700</code></div>
+          <div class="kv"><b>Small</b><code>12-14px / 20-22px</code></div>
+          <div class="kv"><b>Inter-card Gap</b><code>16px (major breaks 24px)</code></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Corner-Radius Rules</h2>
+        <ol class="rule-list">
+          <li><code>Single card</code>: <code>border-radius="12px"</code>.</li>
+          <li><code>Stacked card top</code>: <code>12px 12px 0 0</code>.</li>
+          <li><code>Stacked card middle</code>: no radius.</li>
+          <li><code>Stacked card bottom</code>: <code>0 0 12px 12px</code>.</li>
+          <li>Never combine full-radius siblings with the same background directly on top of each other.</li>
+          <li>Internal media corners: standard image radius <code>10px</code>.</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Available Sections</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Module</th>
+                <th>Newsletter</th>
+                <th>Product Launch</th>
+                <th>Operational</th>
+                <th>Library</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Header + Hero</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">Header only</td><td class="yes">Yes</td></tr>
+              <tr><td>Content Block</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Two-Column Grid</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Feature Highlights</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Feature Grid</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Video Embed</td><td class="no">No</td><td class="yes">Yes</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Testimonial</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Operational Alert</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+              <tr><td>CTA Module</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+              <tr><td>Footer</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </div>
-    <div class="footer">
-        Wolt B2B Creative Production · 2026
-    </div>
-    <script>
-        (function () {
-            var storageKey = 'wolt-email-preview-theme';
-            var toggleButton = document.getElementById('theme-toggle');
+  </div>
 
-            function setTheme(theme) {
-                document.documentElement.setAttribute('data-theme', theme);
-                toggleButton.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
-            }
+  <div class="footer">Wolt B2B Creative Production · 2026</div>
 
-            var savedTheme = localStorage.getItem(storageKey);
-            var initialTheme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light';
-            setTheme(initialTheme);
+  <script>
+    (function () {
+      var storageKey = 'wolt-email-preview-theme';
+      var toggleButton = document.getElementById('theme-toggle');
 
-            toggleButton.addEventListener('click', function () {
-                var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-                var nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                localStorage.setItem(storageKey, nextTheme);
-                setTheme(nextTheme);
-            });
-        })();
-    </script>
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        toggleButton.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+      }
+
+      var savedTheme = localStorage.getItem(storageKey);
+      var initialTheme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light';
+      setTheme(initialTheme);
+
+      toggleButton.addEventListener('click', function () {
+        var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        var nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem(storageKey, nextTheme);
+        setTheme(nextTheme);
+      });
+    })();
+  </script>
 </body>
 </html>
