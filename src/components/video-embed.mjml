@@ -2,7 +2,7 @@
      MODULE: Video / GIF Embed
      Supports: Thumbnail with play overlay linking to external video
      ============================================ -->
-<mj-section background-color="#021738" padding="40px 40px 36px 40px">
+<mj-section background-color="#021738" padding="40px 40px 36px 40px" border-radius="12px 12px 0 0">
   <mj-column width="100%">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" line-height="18px" padding="0 0 8px 0" text-transform="uppercase" letter-spacing="1.5px">
       Tutorial
@@ -15,7 +15,7 @@
     </mj-text>
   </mj-column>
 </mj-section>
-<mj-section background-color="#021738" padding="0 40px 44px 40px">
+<mj-section background-color="#021738" padding="0 40px 44px 40px" border-radius="0 0 12px 12px">
   <mj-column width="100%">
     <!-- Video thumbnail with play button overlay
          The play button is baked into the image.

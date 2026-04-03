@@ -55,7 +55,7 @@
     </mj-section>
 
     <!-- ======== OPERATIONAL ALERT ======== -->
-    <mj-section background-color="#ffffff" padding="40px 30px">
+    <mj-section background-color="#ffffff" padding="40px 30px" border-radius="12px">
       <mj-column width="100%">
         <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#021738" line-height="34px" padding="0 0 16px 0">
           {% if customer.first_name %}{{ customer.first_name }}, we{% else %}We{% endif %} need your attention

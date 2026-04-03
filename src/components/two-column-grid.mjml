@@ -4,7 +4,7 @@
      ============================================ -->
 
 <!-- Variant A: Image Left, Text Right -->
-<mj-section background-color="#021738" padding="36px 30px" direction="ltr">
+<mj-section background-color="#021738" padding="36px 30px" direction="ltr" border-radius="12px 12px 0 0">
   <mj-column width="48%" padding="0 10px 0 0">
     <mj-image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="Feature image" border-radius="10px" padding="0" fluid-on-mobile="true" />
   </mj-column>
@@ -27,7 +27,7 @@
 </mj-section>
 
 <!-- Variant B: Text Left, Image Right -->
-<mj-section background-color="#021738" padding="36px 30px" direction="ltr">
+<mj-section background-color="#021738" padding="36px 30px" direction="ltr" border-radius="0 0 12px 12px">
   <mj-column width="52%" vertical-align="middle" padding="0 10px 0 0">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="700" color="#ffffff" line-height="26px" padding="0 0 12px 0">
       Analytics that help you grow

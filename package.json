@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
+    "sync:docs": "node scripts/sync-docs.js",
+    "publish:pages": "npm run build && npm run sync:docs",
     "watch:mjml": "nodemon --watch src --ext mjml --exec \"node build.js\"",
     "watch:serve": "browser-sync start --server 'dist' --files 'dist/*.html' --no-open --no-notify",
     "dev": "npm-run-all build --parallel watch:*",

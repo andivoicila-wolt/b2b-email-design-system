@@ -2,7 +2,7 @@
      MODULE: Content Block
      Supports: H2 title, paragraph, optional bullets, optional CTA
      ============================================ -->
-<mj-section background-color="#021738" padding="40px 40px 36px 40px">
+<mj-section background-color="#021738" padding="40px 40px 36px 40px" border-radius="12px">
   <mj-column width="100%">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" line-height="18px" padding="0 0 8px 0" text-transform="uppercase" letter-spacing="1.5px">
       Product Update
