@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Preview</title>
+  <style>
+    @import url("https://use.typekit.net/nma8sen.css");
+
+    :root {
+      --bg: #f0f1f4;
+      --text: #021738;
+      --surface: #ffffff;
+      --border: #dbe2ec;
+      --accent: #00c2e8;
+      --shadow: 0 8px 24px rgba(2, 23, 56, 0.12);
+    }
+
+    [data-theme="dark"] {
+      --bg: #0b1424;
+      --text: #e6edf8;
+      --surface: #0f1e35;
+      --border: #29466f;
+      --accent: #53d5f1;
+      --shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 18px;
+      font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 auto 14px auto;
+      max-width: 1080px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .back {
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .toggle {
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .frame-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: var(--surface);
+    }
+
+    iframe {
+      width: 100%;
+      height: calc(100vh - 120px);
+      border: 0;
+      display: block;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="left">
+      <a class="back" href="index.html">Back</a>
+      <div id="preview-title" class="title">Preview</div>
+    </div>
+    <button id="theme-toggle" class="toggle" type="button">Switch to dark mode</button>
+  </div>
+
+  <div class="frame-wrap">
+    <iframe id="email-frame" title="Email preview"></iframe>
+  </div>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = 'wolt-email-preview-theme';
+      var ALLOWED = {
+        'newsletter.html': 'Newsletter Template',
+        'product-launch.html': 'Product Launch Template',
+        'operational.html': 'Operational / Alert Template',
+        'library-preview.html': 'Component Library Preview'
+      };
+
+      var params = new URLSearchParams(window.location.search);
+      var template = params.get('template');
+      if (!template || !ALLOWED[template]) template = 'newsletter.html';
+
+      var frame = document.getElementById('email-frame');
+      var title = document.getElementById('preview-title');
+      var toggle = document.getElementById('theme-toggle');
+      title.textContent = ALLOWED[template];
+      frame.src = template;
+
+      function getTheme() {
+        var saved = localStorage.getItem(STORAGE_KEY);
+        return saved === 'dark' ? 'dark' : 'light';
+      }
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem(STORAGE_KEY, theme);
+        toggle.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+        applyThemeToEmail(theme);
+      }
+
+      function resetPreviewOverrides(doc) {
+        doc.documentElement.removeAttribute('data-preview-theme');
+        var tagged = doc.querySelectorAll('[data-preview-light-bg], [data-preview-light-surface], [data-preview-light-surface-soft]');
+        tagged.forEach(function (el) {
+          el.removeAttribute('data-preview-light-bg');
+          el.removeAttribute('data-preview-light-surface');
+          el.removeAttribute('data-preview-light-surface-soft');
+        });
+      }
+
+      function markThemeSurfaces(doc) {
+        var nodes = doc.querySelectorAll('body, div[role="article"], [style], [bgcolor]');
+        nodes.forEach(function (el) {
+          var styleAttr = (el.getAttribute('style') || '').toLowerCase();
+          var compactStyle = styleAttr.replace(/\s+/g, '');
+          var bgAttr = (el.getAttribute('bgcolor') || '').toLowerCase();
+
+          var hasBg010e1f = compactStyle.indexOf('background:#010e1f') !== -1 || compactStyle.indexOf('background-color:#010e1f') !== -1;
+          var hasBg021738 = compactStyle.indexOf('background:#021738') !== -1 || compactStyle.indexOf('background-color:#021738') !== -1;
+          var hasBg1e293b = compactStyle.indexOf('background:#1e293b') !== -1 || compactStyle.indexOf('background-color:#1e293b') !== -1;
+
+          var isPageBg = hasBg010e1f || bgAttr === '#010e1f';
+          var isDarkSurface = hasBg021738 || bgAttr === '#021738';
+          var isSoftDarkSurface = hasBg1e293b || bgAttr === '#1e293b';
+
+          if (isPageBg || el.tagName.toLowerCase() === 'body' || (el.getAttribute('role') || '').toLowerCase() === 'article') {
+            el.setAttribute('data-preview-light-bg', '1');
+          }
+          if (isDarkSurface) {
+            el.setAttribute('data-preview-light-surface', '1');
+          }
+          if (isSoftDarkSurface) {
+            el.setAttribute('data-preview-light-surface-soft', '1');
+          }
+        });
+      }
+
+      function applyThemeToEmail(theme) {
+        var doc;
+        try {
+          doc = frame.contentDocument || frame.contentWindow.document;
+        } catch (e) {
+          return;
+        }
+        if (!doc || !doc.documentElement) return;
+
+        var style = doc.getElementById('preview-theme-style');
+        if (!style) {
+          style = doc.createElement('style');
+          style.id = 'preview-theme-style';
+          doc.head.appendChild(style);
+        }
+
+        resetPreviewOverrides(doc);
+
+        if (theme !== 'light') {
+          style.textContent = '';
+          return;
+        }
+
+        doc.documentElement.setAttribute('data-preview-theme', 'light');
+        markThemeSurfaces(doc);
+
+        style.textContent = [
+          "html[data-preview-theme='light'] [data-preview-light-bg]{background-color:#f3f5f8 !important;background:#f3f5f8 !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface]{background-color:#ffffff !important;background:#ffffff !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft]{background-color:#eef4fb !important;background:#eef4fb !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface] [style*='color:#ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] [style*='color: #ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] [style*='color:rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] [style*='color: rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] [style*='color:#ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] [style*='color: #ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] [style*='color:rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] [style*='color: rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] [color='#ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] [color='#ffffff']{color:#021738 !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface] [style*='border-color:rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] [style*='border-color: rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] [style*='border-color:rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] [style*='border-color: rgba(255,255,255']{border-color:rgba(2,23,56,0.16) !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface] a[style*='color:#ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] a[style*='color: #ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] a[style*='color:rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] a[style*='color: rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] a[style*='color:#ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] a[style*='color: #ffffff'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] a[style*='color:rgba(255,255,255'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] a[style*='color: rgba(255,255,255']{color:#00c2e8 !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface] td[bgcolor='#00c2e8'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] td[bgcolor='#00c2e8'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface] td[style*='background:#00c2e8'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] td[style*='background:#00c2e8']{background:#00c2e8 !important;background-color:#00c2e8 !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface] td[style*='border:2px solid rgba(255,255,255,0.4)'],",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] td[style*='border:2px solid rgba(255,255,255,0.4)']{border-color:rgba(2,23,56,0.25) !important;background:transparent !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface] td[style*='border:2px solid rgba(255,255,255,0.4)'] a,",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft] td[style*='border:2px solid rgba(255,255,255,0.4)'] a{color:#021738 !important;}"
+        ].join('');
+      }
+
+      frame.addEventListener('load', function () {
+        applyThemeToEmail(getTheme());
+      });
+
+      toggle.addEventListener('click', function () {
+        setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+      });
+
+      setTheme(getTheme());
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolt Merchant Email System — Dashboard</title>
+    <style>
+        @import url("https://use.typekit.net/nma8sen.css");
+        :root {
+            --bg: #f0f1f4;
+            --text: #021738;
+            --surface: #ffffff;
+            --surface-border: #e8eaed;
+            --surface-hover: #f0faff;
+            --shadow: 0 4px 6px rgba(0,0,0,0.05);
+            --muted-text: #4a5568;
+            --footer-text: #9ca3af;
+            --accent: #00c2e8;
+        }
+
+        [data-theme="dark"] {
+            --bg: #0b1424;
+            --text: #e6edf8;
+            --surface: #14243f;
+            --surface-border: #254067;
+            --surface-hover: #1b3154;
+            --shadow: 0 10px 24px rgba(0,0,0,0.35);
+            --muted-text: #b7c5d9;
+            --footer-text: #8ca0bf;
+            --accent: #53d5f1;
+        }
+
+        body {
+            font-family: 'omnes-pro', Helvetica, Arial, sans-serif;
+            font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .container { max-width: 800px; width: 100%; background: var(--surface); padding: 40px; border-radius: 12px; box-shadow: var(--shadow); transition: background-color 0.2s ease, box-shadow 0.2s ease; }
+        h1 { margin-top: 0; color: var(--text); font-size: 24px; border-bottom: 2px solid var(--accent); padding-bottom: 15px; margin-bottom: 30px; }
+        .header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+        .theme-toggle { border: 1px solid var(--surface-border); background: transparent; color: var(--text); border-radius: 999px; padding: 8px 14px; font-size: 13px; cursor: pointer; }
+        .theme-toggle:hover { border-color: var(--accent); }
+        .template-list { list-style: none; padding: 0; }
+        .template-item { margin-bottom: 15px; border: 1px solid var(--surface-border); border-radius: 8px; transition: all 0.2s ease; }
+        .template-item:hover { border-color: var(--accent); background-color: var(--surface-hover); transform: translateY(-2px); }
+        .template-link { display: block; padding: 20px; text-decoration: none; color: inherit; display: flex; align-items: center; justify-content: space-between; }
+        .template-name { font-weight: 600; font-size: 18px; }
+        .template-desc { color: var(--muted-text); font-size: 14px; margin-top: 4px; }
+        .arrow { color: var(--accent); font-weight: bold; font-size: 20px; }
+        .footer { margin-top: 40px; color: var(--footer-text); font-size: 12px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Wolt Merchant Email System</h1>
+            <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark mode</button>
+        </div>
+        <p>Select a template below to preview the design:</p>
+        <ul class="template-list">
+            <li class="template-item">
+                <a href="preview.html?template=newsletter.html" class="template-link">
+                    <div>
+                        <div class="template-name">Newsletter Template</div>
+                        <div class="template-desc">The main quarterly merchant newsletter with all 11 modules enabled.</div>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+            </li>
+            <li class="template-item">
+                <a href="preview.html?template=product-launch.html" class="template-link">
+                    <div>
+                        <div class="template-name">Product Launch Template</div>
+                        <div class="template-desc">Focused on hero updates, feature highlights, and video announcements.</div>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+            </li>
+            <li class="template-item">
+                <a href="preview.html?template=operational.html" class="template-link">
+                    <div>
+                        <div class="template-name">Operational / Alert Template</div>
+                        <div class="template-desc">Action-required and status updates with warning/info alert boxes.</div>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        Wolt B2B Creative Production · 2026
+    </div>
+    <script>
+        (function () {
+            var storageKey = 'wolt-email-preview-theme';
+            var toggleButton = document.getElementById('theme-toggle');
+
+            function setTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                toggleButton.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+            }
+
+            var savedTheme = localStorage.getItem(storageKey);
+            var initialTheme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light';
+            setTheme(initialTheme);
+
+            toggleButton.addEventListener('click', function () {
+                var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+                var nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                localStorage.setItem(storageKey, nextTheme);
+                setTheme(nextTheme);
+            });
+        })();
+    </script>
+</body>
+</html>
