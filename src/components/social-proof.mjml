@@ -9,12 +9,12 @@
     </mj-text>
   </mj-column>
   <mj-column width="33%">
-    <mj-image src="https://cdn.wolt.com/assets/images/partner-logo-placeholder-1.png" alt="Merchant partner" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
+    <mj-image src="assets/logos/WoltAds_Pill_logo_RGB.png" alt="Wolt Ads" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
   </mj-column>
   <mj-column width="33%">
-    <mj-image src="https://cdn.wolt.com/assets/images/partner-logo-placeholder-2.png" alt="Merchant partner" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
+    <mj-image src="assets/logos/WoltCapital_Pill_logo_RGB.png" alt="Wolt Capital" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
   </mj-column>
   <mj-column width="33%">
-    <mj-image src="https://cdn.wolt.com/assets/images/partner-logo-placeholder-3.png" alt="Merchant partner" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
+    <mj-image src="assets/logos/WoltPromos_Pill_logo_RGB.png" alt="Wolt Promos" width="100px" align="center" padding="0 0 20px 0" css-class="logo-opacity" />
   </mj-column>
 </mj-section>

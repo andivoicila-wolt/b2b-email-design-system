@@ -14,7 +14,7 @@
 </mj-section>
 <mj-section background-color="#1e293b" padding="0 20px 44px 20px" border-radius="0 0 12px 12px">
   <mj-column width="33.33%" padding="0 10px">
-    <mj-image src="https://img.icons8.com/fluency/96/restaurant-menu.png" width="48px" padding="0 0 12px 0" align="left" />
+    <mj-image src="assets/icons/email/png/highlight-menu.png" alt="Menu feature icon" width="48px" padding="0 0 12px 0" align="left" />
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 8px 0">
       Menu Editor 2.0
     </mj-text>
@@ -23,7 +23,7 @@
     </mj-text>
   </mj-column>
   <mj-column width="33.33%" padding="0 10px">
-    <mj-image src="https://img.icons8.com/fluency/96/combo-chart.png" width="48px" padding="0 0 12px 0" align="left" />
+    <mj-image src="assets/icons/email/png/highlight-analytics.png" alt="Analytics feature icon" width="48px" padding="0 0 12px 0" align="left" />
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 8px 0">
       Advanced Analytics
     </mj-text>
@@ -32,7 +32,7 @@
     </mj-text>
   </mj-column>
   <mj-column width="33.33%" padding="0 10px">
-    <mj-image src="https://img.icons8.com/fluency/96/megaphone.png" width="48px" padding="0 0 12px 0" align="left" />
+    <mj-image src="assets/icons/email/png/highlight-ads.png" alt="Ads feature icon" width="48px" padding="0 0 12px 0" align="left" />
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#ffffff" line-height="22px" padding="0 0 8px 0">
       Wolt Ads
     </mj-text>

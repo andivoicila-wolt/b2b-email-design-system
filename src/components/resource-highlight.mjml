@@ -4,8 +4,7 @@
      ============================================ -->
 <mj-section background-color="#021738" padding="48px 40px" border-radius="12px">
   <mj-column width="30%" vertical-align="middle">
-    <!-- Placeholder for PDF/Guide thumbnail -->
-    <mj-image src="https://cdn.wolt.com/assets/images/guide-thumbnail-placeholder.png" alt="Guide thumbnail" width="120px" align="left" padding="0 0 20px 0" border-radius="4px" />
+    <mj-image src="assets/icons/email/png/resource-guide.png" alt="Guide thumbnail" width="120px" align="left" padding="0 0 20px 0" border-radius="4px" />
   </mj-column>
   <mj-column width="70%" vertical-align="middle" padding="0 0 0 20px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="700" color="#00c2e8" line-height="20px" padding="0 0 8px 0" text-transform="uppercase" letter-spacing="1px">

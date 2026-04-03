@@ -2,5 +2,48 @@
   "version": 1,
   "updated_at": "2026-04-03",
   "bynder_collection": "wolt-icons",
-  "icons": []
+  "icons": [
+    {
+      "id": "highlight-menu",
+      "source_svg": "assets/icons/source/svg/highlight-menu.svg",
+      "web_svg": "assets/icons/web/svg/highlight-menu.svg",
+      "email_png_1x": "assets/icons/email/png-1x/highlight-menu.png",
+      "email_png_2x": "assets/icons/email/png-2x/highlight-menu.png"
+    },
+    {
+      "id": "highlight-analytics",
+      "source_svg": "assets/icons/source/svg/highlight-analytics.svg",
+      "web_svg": "assets/icons/web/svg/highlight-analytics.svg",
+      "email_png_1x": "assets/icons/email/png-1x/highlight-analytics.png",
+      "email_png_2x": "assets/icons/email/png-2x/highlight-analytics.png"
+    },
+    {
+      "id": "highlight-ads",
+      "source_svg": "assets/icons/source/svg/highlight-ads.svg",
+      "web_svg": "assets/icons/web/svg/highlight-ads.svg",
+      "email_png_1x": "assets/icons/email/png-1x/highlight-ads.png",
+      "email_png_2x": "assets/icons/email/png-2x/highlight-ads.png"
+    },
+    {
+      "id": "resource-guide",
+      "source_svg": "assets/icons/source/svg/resource-guide.svg",
+      "web_svg": "assets/icons/web/svg/resource-guide.svg",
+      "email_png_1x": "assets/icons/email/png-1x/resource-guide.png",
+      "email_png_2x": "assets/icons/email/png-2x/resource-guide.png"
+    },
+    {
+      "id": "alert-warning",
+      "source_svg": "assets/icons/source/svg/alert-warning.svg",
+      "web_svg": "assets/icons/web/svg/alert-warning.svg",
+      "email_png_1x": "assets/icons/email/png-1x/alert-warning.png",
+      "email_png_2x": "assets/icons/email/png-2x/alert-warning.png"
+    },
+    {
+      "id": "alert-info",
+      "source_svg": "assets/icons/source/svg/alert-info.svg",
+      "web_svg": "assets/icons/web/svg/alert-info.svg",
+      "email_png_1x": "assets/icons/email/png-1x/alert-info.png",
+      "email_png_2x": "assets/icons/email/png-2x/alert-info.png"
+    }
+  ]
 }
