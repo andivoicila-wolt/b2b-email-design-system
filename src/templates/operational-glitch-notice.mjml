@@ -1,0 +1,30 @@
+<mjml>
+  <mj-head>
+    <mj-title>Operational - Glitch Notice</mj-title>
+    <mj-preview>Service update and resolution note</mj-preview>
+    <mj-attributes>
+      <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
+      <mj-text color="#021738" />
+      <mj-body background-color="#f8f8f8" />
+      <mj-section background-color="#ffffff" />
+    </mj-attributes>
+    <mj-style>@import url("https://use.typekit.net/nma8sen.css");</mj-style>
+  </mj-head>
+  <mj-body background-color="#f8f8f8" width="640px">
+    <mj-section padding="20px 0 0 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
+    <mj-include path="../components/header.mjml" />
+    <mj-section padding="24px 30px" background-color="#ffffff" border-radius="12px">
+      <mj-column>
+        <mj-text font-size="16px" line-height="28px" color="#4a5568" padding="0">
+          Dear partner,<br/><br/>
+          We're reaching out regarding a recent technical issue affecting order visibility for a short period. The issue is now resolved and we are implementing preventive actions.
+          <br/><br/>If you notice any unusual behavior, please contact support.
+          <br/><br/>Best regards,<br/>Wolt Team
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
+    <mj-include path="../components/footer.mjml" />
+    <mj-section padding="0 0 24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
+  </mj-body>
+</mjml>
