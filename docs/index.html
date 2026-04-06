@@ -253,46 +253,63 @@
       padding: 12px;
     }
 
-    .space-row {
+    .space-grid {
       display: grid;
-      grid-template-columns: 170px 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
-      align-items: center;
-      margin-bottom: 10px;
     }
 
-    .space-row:last-child { margin-bottom: 0; }
+    .space-example {
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      background: var(--surface-2);
+      padding: 10px;
+    }
 
-    .space-label {
+    .space-title {
       font-size: 12px;
       font-weight: 700;
       color: var(--text);
-      white-space: nowrap;
+      margin-bottom: 8px;
     }
 
-    .space-track {
+    .space-layout {
+      border: 1px dashed #9ddfed;
+      border-radius: 8px;
+      background: #eefbfe;
+      padding: 8px;
+    }
+
+    .space-section {
       height: 24px;
-      border-radius: 999px;
-      background: #e7f8fc;
-      border: 1px solid #b4ecf6;
-      position: relative;
-      padding: 4px 6px;
-      display: flex;
-      align-items: center;
+      border-radius: 6px;
+      background: #c8f3fb;
+      border: 1px solid #84e4f4;
     }
 
     .space-gap {
-      height: 12px;
-      border-radius: 999px;
-      background: #00c2e8;
-      min-width: 8px;
+      border-left: 2px solid #00c2e8;
+      margin: 0 auto;
+      width: 0;
+      position: relative;
     }
 
-    .space-note {
+    .space-gap::before,
+    .space-gap::after {
+      content: "";
+      position: absolute;
+      left: -4px;
+      width: 8px;
+      border-top: 2px solid #00c2e8;
+    }
+
+    .space-gap::before { top: 0; }
+    .space-gap::after { bottom: 0; }
+
+    .space-meta {
       font-size: 11px;
       color: var(--muted-text);
-      margin-left: 8px;
-      white-space: nowrap;
+      margin-top: 8px;
     }
 
     .button-row {
@@ -418,6 +435,7 @@
     @media (max-width: 920px) {
       .sample-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .type-specimens { grid-template-columns: 1fr; }
+      .space-grid { grid-template-columns: 1fr; }
       .button-row { grid-template-columns: 1fr; }
       .recipe-grid { grid-template-columns: 1fr; }
     }
@@ -560,23 +578,45 @@
 
       <section class="card">
         <h2>Spacing & Rhythm (Visual)</h2>
-        <p class="help">Use fixed spacing values so every newsletter feels consistent.</p>
+        <p class="help">This is the vertical distance between two stacked sections/cards in the email layout.</p>
         <div class="spacing-demo">
-          <div class="space-row">
-            <div class="space-label">24px</div>
-            <div class="space-track"><div class="space-gap" style="width: 24px;"></div><div class="space-note">Major section break</div></div>
-          </div>
-          <div class="space-row">
-            <div class="space-label">16px</div>
-            <div class="space-track"><div class="space-gap" style="width: 16px;"></div><div class="space-note">Inter-card gap</div></div>
-          </div>
-          <div class="space-row">
-            <div class="space-label">12px</div>
-            <div class="space-track"><div class="space-gap" style="width: 12px;"></div><div class="space-note">Micro spacing</div></div>
-          </div>
-          <div class="space-row">
-            <div class="space-label">8px</div>
-            <div class="space-track"><div class="space-gap" style="width: 8px;"></div><div class="space-note">Label spacing</div></div>
+          <div class="space-grid">
+            <div class="space-example">
+              <div class="space-title">24px - major section break</div>
+              <div class="space-layout">
+                <div class="space-section"></div>
+                <div class="space-gap" style="height:24px;"></div>
+                <div class="space-section"></div>
+              </div>
+              <div class="space-meta">Use between major modules (hero -> next content block).</div>
+            </div>
+            <div class="space-example">
+              <div class="space-title">16px - inter-card gap</div>
+              <div class="space-layout">
+                <div class="space-section"></div>
+                <div class="space-gap" style="height:16px;"></div>
+                <div class="space-section"></div>
+              </div>
+              <div class="space-meta">Default spacing between regular cards/sections.</div>
+            </div>
+            <div class="space-example">
+              <div class="space-title">12px - micro spacing</div>
+              <div class="space-layout">
+                <div class="space-section"></div>
+                <div class="space-gap" style="height:12px;"></div>
+                <div class="space-section"></div>
+              </div>
+              <div class="space-meta">Compact separation inside tightly related content groups.</div>
+            </div>
+            <div class="space-example">
+              <div class="space-title">8px - label spacing</div>
+              <div class="space-layout">
+                <div class="space-section"></div>
+                <div class="space-gap" style="height:8px;"></div>
+                <div class="space-section"></div>
+              </div>
+              <div class="space-meta">Small text-to-text spacing (eyebrow to heading, etc.).</div>
+            </div>
           </div>
         </div>
       </section>
