@@ -2,7 +2,7 @@
      MODULE: ROI / Stats Counter
      Supports: Large metric number, subtitle, description
      ============================================ -->
-<mj-section background-color="#021738" padding="48px 40px" border-radius="12px">
+<mj-section background-color="#ffffff" padding="48px 40px" border-radius="12px">
   <mj-column width="100%">
     <!-- Metric Number -->
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="64px" font-weight="700" color="#00c2e8" line-height="64px" padding="0 0 8px 0" align="center">
@@ -10,12 +10,12 @@
     </mj-text>
     
     <!-- Metric Subhead -->
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="700" color="#ffffff" line-height="26px" padding="0 0 16px 0" align="center">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="700" color="#021738" line-height="26px" padding="0 0 16px 0" align="center">
       Average monthly order growth
     </mj-text>
     
     <!-- Description -->
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="rgba(255,255,255,0.78)" line-height="26px" padding="0" align="center">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0" align="center">
       Merchants who use **Wolt Ads** and optimize their menus see significant, measurable impact within the first 30 days. Don't leave growth on the table — join the thousands of partners scaling with Wolt.
     </mj-text>
   </mj-column>

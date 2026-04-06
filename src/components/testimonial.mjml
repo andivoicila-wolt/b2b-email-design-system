@@ -2,26 +2,26 @@
      MODULE: Testimonial / Quote
      Supports: Quote text, customer name/role/company, optional photo, link
      ============================================ -->
-<mj-section background-color="#12325d" padding="44px 40px" border-radius="12px 12px 0 0">
+<mj-section background-color="#ffffff" padding="44px 40px" border-radius="12px 12px 0 0">
   <mj-column width="100%">
     <!-- Large decorative quote mark -->
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="64px" font-weight="700" color="#00c2e8" line-height="40px" padding="0 0 16px 0">
       "
     </mj-text>
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="400" color="#ffffff" line-height="32px" padding="0 0 28px 0" font-style="italic">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="400" color="#021738" line-height="32px" padding="0 0 28px 0" font-style="italic">
       Since joining Wolt, our delivery orders have grown by 45%. The Merchant Portal makes it incredibly easy to manage everything in one place.
     </mj-text>
   </mj-column>
 </mj-section>
-<mj-section background-color="#12325d" padding="0 40px 44px 40px" border-radius="0 0 12px 12px">
+<mj-section background-color="#ffffff" padding="0 40px 44px 40px" border-radius="0 0 12px 12px">
   <mj-column width="15%" vertical-align="middle">
     <mj-image src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Customer photo" width="56px" border-radius="50px" padding="0" />
   </mj-column>
   <mj-column width="85%" vertical-align="middle" padding="0 0 0 10px">
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#ffffff" line-height="20px" padding="0 0 2px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#021738" line-height="20px" padding="0 0 2px 0">
       Maria Virtanen
     </mj-text>
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="rgba(255,255,255,0.7)" line-height="20px" padding="0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="400" color="#4a5568" line-height="20px" padding="0">
       Owner, Ravintola Helsinki · <a href="#" style="color:#00c2e8; text-decoration:none;">Read case study →</a>
     </mj-text>
   </mj-column>

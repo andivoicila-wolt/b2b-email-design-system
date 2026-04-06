@@ -2,18 +2,18 @@
      MODULE: Hero Banner
      Supports: Full-width image, headline, intro text, primary CTA
      ============================================ -->
-<mj-section background-color="#021738" padding="0">
+<mj-section background-color="#ffffff" padding="0">
   <mj-column width="100%" padding="0">
     <!-- Hero Image — replace with campaign-specific image -->
     <mj-image src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=500&fit=crop" alt="Hero image" padding="0" fluid-on-mobile="true" />
   </mj-column>
 </mj-section>
-<mj-section background-color="#021738" padding="40px 40px 44px 40px" border-radius="0 0 12px 12px">
+<mj-section background-color="#ffffff" padding="40px 40px 44px 40px" border-radius="0 0 12px 12px">
   <mj-column width="100%">
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32px" font-weight="700" color="#ffffff" line-height="38px" padding="0 0 16px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32px" font-weight="700" color="#021738" line-height="38px" padding="0 0 16px 0">
       {% if customer.first_name %}Hi {{ customer.first_name }}, here's{% else %}Here are{% endif %} what's new for your business
     </mj-text>
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="rgba(255,255,255,0.78)" line-height="26px" padding="0 0 28px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0 0 28px 0">
       The latest product updates, tips, and insights to help you grow on Wolt.
     </mj-text>
     <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="600" border-radius="8px" inner-padding="14px 32px" padding="0" href="https://merchant.wolt.com">

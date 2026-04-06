@@ -11,9 +11,9 @@
 
     <mj-attributes>
       <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
-      <mj-text color="#ffffff" />
-      <mj-body background-color="#021738" />
-      <mj-section background-color="#021738" />
+      <mj-text color="#021738" />
+      <mj-body background-color="#f8f8f8" />
+      <mj-section background-color="#ffffff" />
     </mj-attributes>
     <mj-style>
       @import url("https://use.typekit.net/nma8sen.css");
@@ -40,7 +40,7 @@
     </mj-raw>
   </mj-head>
 
-  <mj-body background-color="#021738" width="640px">
+  <mj-body background-color="#f8f8f8" width="640px">
 
     <mj-section padding="20px 0 0 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
@@ -55,12 +55,12 @@
     </mj-section>
 
     <!-- ======== OPERATIONAL ALERT ======== -->
-    <mj-section background-color="#12325d" padding="40px 30px" border-radius="12px">
+    <mj-section background-color="#ffffff" padding="40px 30px" border-radius="12px">
       <mj-column width="100%">
-        <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#ffffff" line-height="34px" padding="0 0 16px 0">
+        <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#021738" line-height="34px" padding="0 0 16px 0">
           {% if customer.first_name %}{{ customer.first_name }}, we{% else %}We{% endif %} need your attention
         </mj-text>
-        <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="rgba(255,255,255,0.82)" line-height="26px" padding="0 0 28px 0">
+        <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0 0 28px 0">
           Please review the following notice regarding your account.
         </mj-text>
       </mj-column>

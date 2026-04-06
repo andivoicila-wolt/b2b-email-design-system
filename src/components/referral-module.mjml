@@ -2,20 +2,20 @@
      MODULE: Referral Module (Merchant-get-Merchant)
      Supports: Headline, Reward info, Referral code box
      ============================================ -->
-<mj-section background-color="#021738" padding="48px 40px" border-radius="12px">
+<mj-section background-color="#ffffff" padding="48px 40px" border-radius="12px">
   <mj-column width="100%">
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#ffffff" line-height="34px" padding="0 0 16px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#021738" line-height="34px" padding="0 0 16px 0">
       Grow together. Refer a partner.
     </mj-text>
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="rgba(255,255,255,0.78)" line-height="26px" padding="0 0 28px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0 0 28px 0">
       Know a business that would thrive on Wolt? Refer them! Once they go live and complete their first 50 orders, **you'll both earn a €100 commission credit**.
     </mj-text>
   </mj-column>
-  <mj-column width="100%" background-color="#12325d" border-radius="8px" padding="16px">
+  <mj-column width="100%" background-color="#ffffff" border-radius="8px" padding="16px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" color="#00c2e8" line-height="20px" padding="0 0 4px 0" text-transform="uppercase" letter-spacing="1px" align="center">
       Your unique referral link
     </mj-text>
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="600" color="#ffffff" line-height="24px" padding="0" align="center">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="600" color="#021738" line-height="24px" padding="0" align="center">
       <a href="https://wolt.com/refer?code={{ customer.referral_code | default: 'MERCHANT123' }}" style="color:#ffffff; text-decoration:underline;">wolt.com/refer?code={{ customer.referral_code | default: 'MERCHANT123' }}</a>
     </mj-text>
   </mj-column>

@@ -2,12 +2,12 @@
      MODULE: App Download Bar
      Supports: App Store & Play Store links
      ============================================ -->
-<mj-section background-color="#021738" padding="48px 40px" border-radius="12px">
+<mj-section background-color="#ffffff" padding="48px 40px" border-radius="12px">
   <mj-column width="100%">
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24px" font-weight="700" color="#ffffff" line-height="30px" padding="0 0 12px 0" align="center">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24px" font-weight="700" color="#021738" line-height="30px" padding="0 0 12px 0" align="center">
       Business at your fingertips
     </mj-text>
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="rgba(255,255,255,0.72)" line-height="26px" padding="0 0 28px 0" align="center">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0 0 28px 0" align="center">
       Manage orders, update menus, and track performance on the go with the **Wolt Merchant App**.
     </mj-text>
   </mj-column>

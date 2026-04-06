@@ -2,7 +2,7 @@
      MODULE: Header
      Wolt Merchant Email Design System
      ============================================ -->
-<mj-section background-color="#021738" padding="24px 30px 20px 30px" border-radius="12px 12px 0 0">
+<mj-section background-color="#ffffff" padding="24px 30px 20px 30px" border-radius="12px 12px 0 0">
   <mj-column width="50%" vertical-align="middle">
     <mj-image width="220px" src="assets/logos/WoltMerchant_Pill_logo_RGB.png" alt="Wolt Merchant" align="left" padding="0" />
   </mj-column>
@@ -12,8 +12,8 @@
     </mj-text>
   </mj-column>
 </mj-section>
-<mj-section background-color="#021738" padding="0">
+<mj-section background-color="#ffffff" padding="0">
   <mj-column>
-    <mj-divider border-color="rgba(255,255,255,0.1)" border-width="1px" padding="0 30px" />
+    <mj-divider border-color="#4a5568" border-width="1px" padding="0 30px" />
   </mj-column>
 </mj-section>

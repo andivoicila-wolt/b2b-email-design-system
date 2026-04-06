@@ -2,7 +2,7 @@
      MODULE: Webinar / Event Highlight
      Supports: Date/Time/Location, Title, Description, CTA
      ============================================ -->
-<mj-section background-color="#021738" padding="40px 40px" border-radius="12px">
+<mj-section background-color="#ffffff" padding="40px 40px" border-radius="12px">
   <mj-column width="100%">
     <!-- Date & Label -->
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="700" color="#00c2e8" line-height="18px" padding="0 0 12px 0" text-transform="uppercase" letter-spacing="1.5px">
@@ -10,12 +10,12 @@
     </mj-text>
     
     <!-- Title -->
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#ffffff" line-height="34px" padding="0 0 16px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28px" font-weight="700" color="#021738" line-height="34px" padding="0 0 16px 0">
       Optimizing your menu for peak delivery hours
     </mj-text>
     
     <!-- Description -->
-    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="rgba(255,255,255,0.78)" line-height="26px" padding="0 0 28px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0 0 28px 0">
       Join our merchant success team for a deep dive into the latest data on delivery trends in your city. Learn how to adjust your operation to win more orders during high-demand windows.
     </mj-text>
   </mj-column>

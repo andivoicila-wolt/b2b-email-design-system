@@ -11,9 +11,9 @@
 
     <mj-attributes>
       <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
-      <mj-text color="#ffffff" />
-      <mj-body background-color="#021738" />
-      <mj-section background-color="#021738" />
+      <mj-text color="#021738" />
+      <mj-body background-color="#f8f8f8" />
+      <mj-section background-color="#ffffff" />
     </mj-attributes>
 
     <mj-style>
@@ -30,7 +30,7 @@
       }
 
       @media (prefers-color-scheme: dark) {
-        .body-bg { background-color: #021738 !important; }
+        .body-bg { background-color: #f8f8f8 !important; }
       }
     </mj-style>
     <mj-style inline="inline">
@@ -46,7 +46,7 @@
     </mj-raw>
   </mj-head>
 
-  <mj-body background-color="#021738" width="640px" css-class="body-bg">
+  <mj-body background-color="#f8f8f8" width="640px" css-class="body-bg">
 
     <!-- Top spacer -->
     <mj-section padding="20px 0 0 0" background-color="transparent">
