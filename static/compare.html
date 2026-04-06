@@ -91,7 +91,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 320px;
       gap: 0;
       min-height: 420px;
     }
@@ -143,6 +143,58 @@
       background: #f8f8f8;
     }
 
+    .checklist {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface-2);
+      padding: 10px;
+      min-height: 350px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .check-item input {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent);
+      flex: 0 0 auto;
+    }
+
+    .notes-label {
+      margin: 10px 0 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .notes {
+      width: 100%;
+      min-height: 110px;
+      padding: 8px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 13px;
+      resize: vertical;
+    }
+
+    .check-actions {
+      margin-top: 8px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
     @media (max-width: 980px) {
       .grid { grid-template-columns: 1fr; }
       .pane { border-right: none; border-bottom: 1px solid var(--border); }
@@ -159,6 +211,8 @@
       </div>
       <div class="actions">
         <a href="index.html" class="btn">Back</a>
+        <button id="export-notes" class="btn" type="button">Export notes</button>
+        <button id="reset-all" class="btn" type="button">Reset all audits</button>
         <button id="theme-toggle" class="btn" type="button">Switch to dark mode</button>
       </div>
     </div>
@@ -169,8 +223,18 @@
   <script>
     (function () {
       var STORAGE_KEY = 'wolt-email-preview-theme';
+      var AUDIT_KEY = 'wolt-email-compare-audit-v1';
       var toggle = document.getElementById('theme-toggle');
+      var exportBtn = document.getElementById('export-notes');
+      var resetAllBtn = document.getElementById('reset-all');
       var rows = document.getElementById('rows');
+      var checks = [
+        ['moduleMissing', 'Missing module'],
+        ['copyMismatch', 'Copy mismatch'],
+        ['layoutMismatch', 'Layout mismatch'],
+        ['visualMismatch', 'Visual hierarchy mismatch'],
+        ['ctaMismatch', 'CTA mismatch']
+      ];
 
       var mappings = [
         ['Survey - Feedback Ask', 'assets/current-mapped/survey-feedback.png', 'survey-feedback.html'],
@@ -196,8 +260,109 @@
         toggle.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
       }
 
+      function loadAudit() {
+        try {
+          var raw = localStorage.getItem(AUDIT_KEY);
+          return raw ? JSON.parse(raw) : {};
+        } catch (e) {
+          return {};
+        }
+      }
+
+      function saveAudit(data) {
+        localStorage.setItem(AUDIT_KEY, JSON.stringify(data));
+      }
+
+      function ensureRow(audit, id) {
+        if (!audit[id]) {
+          audit[id] = {
+            moduleMissing: false,
+            copyMismatch: false,
+            layoutMismatch: false,
+            visualMismatch: false,
+            ctaMismatch: false,
+            notes: ''
+          };
+        }
+        return audit[id];
+      }
+
+      function escapeHtml(text) {
+        return String(text)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function bindAuditHandlers() {
+        var audit = loadAudit();
+        var inputs = rows.querySelectorAll('input[data-audit-id], textarea[data-audit-id], button[data-reset-id]');
+        inputs.forEach(function (el) {
+          if (el.tagName === 'BUTTON') {
+            el.addEventListener('click', function () {
+              var id = el.getAttribute('data-reset-id');
+              delete audit[id];
+              saveAudit(audit);
+              render();
+            });
+            return;
+          }
+
+          var handler = function () {
+            var id = el.getAttribute('data-audit-id');
+            var key = el.getAttribute('data-audit-key');
+            var row = ensureRow(audit, id);
+            row[key] = el.type === 'checkbox' ? el.checked : el.value;
+            saveAudit(audit);
+          };
+          el.addEventListener('change', handler);
+          if (el.tagName === 'TEXTAREA') {
+            el.addEventListener('input', handler);
+          }
+        });
+      }
+
+      function exportAudit() {
+        var audit = loadAudit();
+        var lines = ['# Wolt Email Compare Audit', ''];
+        mappings.forEach(function (m) {
+          var id = m[2];
+          var row = audit[id];
+          if (!row) return;
+          var hasIssue = checks.some(function (c) { return row[c[0]]; }) || (row.notes && row.notes.trim());
+          if (!hasIssue) return;
+          lines.push('## ' + m[0] + ' (' + id + ')');
+          checks.forEach(function (c) {
+            if (row[c[0]]) lines.push('- [x] ' + c[1]);
+          });
+          if (row.notes && row.notes.trim()) {
+            lines.push('- Notes: ' + row.notes.trim().replace(/\n/g, ' / '));
+          }
+          lines.push('');
+        });
+
+        var out = lines.join('\n');
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(out).then(function () {
+            exportBtn.textContent = 'Exported to clipboard';
+            setTimeout(function () { exportBtn.textContent = 'Export notes'; }, 1200);
+          });
+          return;
+        }
+        window.prompt('Copy audit notes:', out);
+      }
+
       function render() {
+        var audit = loadAudit();
         rows.innerHTML = mappings.map(function (m) {
+          var id = m[2];
+          var rowAudit = ensureRow(audit, id);
+          var checksHtml = checks.map(function (c) {
+            var checked = rowAudit[c[0]] ? ' checked' : '';
+            return '<label class="check-item"><input type="checkbox" data-audit-id="' + id + '" data-audit-key="' + c[0] + '"' + checked + '><span>' + c[1] + '</span></label>';
+          }).join('');
           return [
             '<section class="row">',
             '  <div class="row-head">',
@@ -213,14 +378,29 @@
             '      <div class="pane-title">Revised Modular Version</div>',
             '      <div class="revised"><iframe title="' + m[0] + ' revised" src="' + m[2] + '"></iframe></div>',
             '    </div>',
+            '    <div class="pane">',
+            '      <div class="pane-title">Audit Checklist</div>',
+            '      <div class="checklist">',
+                     checksHtml,
+            '        <div class="notes-label">Notes</div>',
+            '        <textarea class="notes" data-audit-id="' + id + '" data-audit-key="notes" placeholder="What is still missing or inconsistent?">' + escapeHtml(rowAudit.notes || '') + '</textarea>',
+            '        <div class="check-actions"><button class="btn" type="button" data-reset-id="' + id + '">Reset row</button></div>',
+            '      </div>',
+            '    </div>',
             '  </div>',
             '</section>'
           ].join('');
         }).join('');
+        bindAuditHandlers();
       }
 
       toggle.addEventListener('click', function () {
         setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+      });
+      exportBtn.addEventListener('click', exportAudit);
+      resetAllBtn.addEventListener('click', function () {
+        localStorage.removeItem(AUDIT_KEY);
+        render();
       });
 
       setTheme(getTheme());
