@@ -4,7 +4,7 @@
      ============================================ -->
 <mj-section background-color="#ffffff" padding="0" border-radius="12px">
   <mj-column padding="0">
-    <mj-image src="assets/current-mapped/growth-wolt-capital.png" alt="Wolt Capital visual" padding="0" fluid-on-mobile="true" />
+    <mj-image src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1200&h=650&fit=crop" alt="Merchant reviewing financing options" padding="0" fluid-on-mobile="true" />
   </mj-column>
 </mj-section>
 <mj-section background-color="#00c2e8" padding="16px 32px" border-radius="12px 12px 0 0">

@@ -4,7 +4,7 @@
      ============================================ -->
 <mj-section background-color="#ffffff" padding="0" border-radius="12px 12px 0 0">
   <mj-column padding="0">
-    <mj-image src="assets/current-mapped/product-performance-recovery.png" alt="Merchant performance dashboard" padding="0" fluid-on-mobile="true" />
+    <mj-image src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&h=650&fit=crop" alt="Merchant dashboard metrics" padding="0" fluid-on-mobile="true" />
   </mj-column>
 </mj-section>
 <mj-section background-color="#ffffff" padding="28px 34px 36px 34px" border-radius="0 0 12px 12px">
