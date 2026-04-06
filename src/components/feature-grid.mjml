@@ -2,7 +2,7 @@
      MODULE: Feature Grid / Carousel
      Supports: Section title + 2-4 card grid with image, title, desc, link
      ============================================ -->
-<mj-section background-color="#ffffff" padding="44px 30px 12px 30px" border-radius="12px 12px 0 0">
+<mj-section background-color="#f2f6fc" padding="44px 30px 12px 30px" border-radius="12px 12px 0 0">
   <mj-column width="100%">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" line-height="18px" padding="0 0 8px 10px" text-transform="uppercase" letter-spacing="1.5px">
       From the community
@@ -12,7 +12,7 @@
     </mj-text>
   </mj-column>
 </mj-section>
-<mj-section background-color="#ffffff" padding="0 20px 44px 20px" border-radius="0 0 12px 12px">
+<mj-section background-color="#f2f6fc" padding="0 20px 44px 20px" border-radius="0 0 12px 12px">
   <mj-column width="50%" padding="0 10px 20px 10px">
     <mj-image src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Restaurant 1" border-radius="10px" padding="0 0 14px 0" fluid-on-mobile="true" />
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#021738" line-height="22px" padding="0 0 6px 0">

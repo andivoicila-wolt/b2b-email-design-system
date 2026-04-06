@@ -2,7 +2,7 @@
      MODULE: Webinar / Event Highlight
      Supports: Date/Time/Location, Title, Description, CTA
      ============================================ -->
-<mj-section background-color="#ffffff" padding="40px 40px" border-radius="12px">
+<mj-section background-color="#f2f6fc" padding="40px 40px" border-radius="12px">
   <mj-column width="100%">
     <!-- Date & Label -->
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="700" color="#00c2e8" line-height="18px" padding="0 0 12px 0" text-transform="uppercase" letter-spacing="1.5px">

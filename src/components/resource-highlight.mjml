@@ -2,7 +2,7 @@
      MODULE: Resource / Guide Highlight
      Supports: Document thumbnail, Title, CTA
      ============================================ -->
-<mj-section background-color="#ffffff" padding="48px 40px" border-radius="12px">
+<mj-section background-color="#f2f6fc" padding="48px 40px" border-radius="12px">
   <mj-column width="30%" vertical-align="middle">
     <mj-image src="assets/icons/email/png/resource-guide.png" alt="Guide thumbnail" width="120px" align="left" padding="0 0 20px 0" border-radius="4px" />
   </mj-column>

@@ -2,7 +2,7 @@
      MODULE: Feature Highlights
      Supports: 2-3 column icon + text grid
      ============================================ -->
-<mj-section background-color="#ffffff" padding="44px 30px 20px 30px" border-radius="12px 12px 0 0">
+<mj-section background-color="#f2f6fc" padding="44px 30px 20px 30px" border-radius="12px 12px 0 0">
   <mj-column width="100%">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13px" font-weight="600" color="#00c2e8" line-height="18px" padding="0 0 8px 10px" text-transform="uppercase" letter-spacing="1.5px">
       What's New
@@ -12,7 +12,7 @@
     </mj-text>
   </mj-column>
 </mj-section>
-<mj-section background-color="#ffffff" padding="0 20px 44px 20px" border-radius="0 0 12px 12px">
+<mj-section background-color="#f2f6fc" padding="0 20px 44px 20px" border-radius="0 0 12px 12px">
   <mj-column width="33.33%" padding="0 10px">
     <mj-image src="assets/icons/email/png/highlight-menu.png" alt="Menu feature icon" width="48px" padding="0 0 12px 0" align="left" />
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#021738" line-height="22px" padding="0 0 8px 0">
