@@ -173,13 +173,14 @@
           var isDarkSurface = hasBg021738 || bgAttr === '#021738';
           var isSoftDarkSurface = hasBg1e293b || hasBg12325d || bgAttr === '#1e293b' || bgAttr === '#12325d';
 
-          if (isPageBg || el.tagName.toLowerCase() === 'body' || (el.getAttribute('role') || '').toLowerCase() === 'article') {
+          var isRootContainer = el.tagName.toLowerCase() === 'body' || (el.getAttribute('role') || '').toLowerCase() === 'article';
+          if (isPageBg || isRootContainer) {
             el.setAttribute('data-preview-light-bg', '1');
           }
-          if (isDarkSurface) {
+          if (isDarkSurface && !isPageBg && !isRootContainer) {
             el.setAttribute('data-preview-light-surface', '1');
           }
-          if (isSoftDarkSurface) {
+          if (isSoftDarkSurface && !isPageBg && !isRootContainer) {
             el.setAttribute('data-preview-light-surface-soft', '1');
           }
         });
