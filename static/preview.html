@@ -167,10 +167,11 @@
           var hasBg010e1f = compactStyle.indexOf('background:#010e1f') !== -1 || compactStyle.indexOf('background-color:#010e1f') !== -1;
           var hasBg021738 = compactStyle.indexOf('background:#021738') !== -1 || compactStyle.indexOf('background-color:#021738') !== -1;
           var hasBg1e293b = compactStyle.indexOf('background:#1e293b') !== -1 || compactStyle.indexOf('background-color:#1e293b') !== -1;
+          var hasBg12325d = compactStyle.indexOf('background:#12325d') !== -1 || compactStyle.indexOf('background-color:#12325d') !== -1;
 
-          var isPageBg = hasBg010e1f || bgAttr === '#010e1f';
+          var isPageBg = hasBg010e1f || hasBg021738 || bgAttr === '#010e1f' || bgAttr === '#021738';
           var isDarkSurface = hasBg021738 || bgAttr === '#021738';
-          var isSoftDarkSurface = hasBg1e293b || bgAttr === '#1e293b';
+          var isSoftDarkSurface = hasBg1e293b || hasBg12325d || bgAttr === '#1e293b' || bgAttr === '#12325d';
 
           if (isPageBg || el.tagName.toLowerCase() === 'body' || (el.getAttribute('role') || '').toLowerCase() === 'article') {
             el.setAttribute('data-preview-light-bg', '1');
@@ -211,9 +212,9 @@
         markThemeSurfaces(doc);
 
         style.textContent = [
-          "html[data-preview-theme='light'] [data-preview-light-bg]{background-color:#f3f5f8 !important;background:#f3f5f8 !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-bg]{background-color:#f8f8f8 !important;background:#f8f8f8 !important;}",
           "html[data-preview-theme='light'] [data-preview-light-surface]{background-color:#ffffff !important;background:#ffffff !important;}",
-          "html[data-preview-theme='light'] [data-preview-light-surface-soft]{background-color:#eef4fb !important;background:#eef4fb !important;}",
+          "html[data-preview-theme='light'] [data-preview-light-surface-soft]{background-color:#f2f6fc !important;background:#f2f6fc !important;}",
           "html[data-preview-theme='light'] [data-preview-light-surface] [style*='color:#ffffff'],",
           "html[data-preview-theme='light'] [data-preview-light-surface] [style*='color: #ffffff'],",
           "html[data-preview-theme='light'] [data-preview-light-surface] [style*='color:rgba(255,255,255'],",

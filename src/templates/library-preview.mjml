@@ -12,7 +12,7 @@
     <mj-attributes>
       <mj-all font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" />
       <mj-text color="#ffffff" />
-      <mj-body background-color="#010e1f" />
+      <mj-body background-color="#021738" />
       <mj-section background-color="#021738" />
     </mj-attributes>
     <mj-style>
@@ -44,7 +44,7 @@
     </mj-raw>
   </mj-head>
 
-  <mj-body background-color="#010e1f" width="640px">
+  <mj-body background-color="#021738" width="640px">
 
     <mj-section padding="20px 0 0 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>

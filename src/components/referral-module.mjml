@@ -11,7 +11,7 @@
       Know a business that would thrive on Wolt? Refer them! Once they go live and complete their first 50 orders, **you'll both earn a €100 commission credit**.
     </mj-text>
   </mj-column>
-  <mj-column width="100%" background-color="#1e293b" border-radius="8px" padding="16px">
+  <mj-column width="100%" background-color="#12325d" border-radius="8px" padding="16px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" color="#00c2e8" line-height="20px" padding="0 0 4px 0" text-transform="uppercase" letter-spacing="1px" align="center">
       Your unique referral link
     </mj-text>

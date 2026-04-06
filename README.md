@@ -50,9 +50,10 @@ email-system/
 |---|---|
 | Max Width | 640px |
 | Primary (Blueberry Blue) | `#021738` |
+| Secondary Surface (Derived) | `#12325d` |
 | Accent (Wolt Cyan) | `#00c2e8` |
 | Body Text | `#4a5568` |
-| Body Background | `#f0f1f4` |
+| Body Background (Milk White) | `#f8f8f8` |
 | Font | Omnes Pro (fallback: Helvetica, Arial) |
 
 ## Card Composition Rules
