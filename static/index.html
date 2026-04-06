@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wolt Merchant Email System — Dashboard</title>
+  <title>Wolt Merchant Email System - Visual Design System</title>
   <style>
     @import url("https://use.typekit.net/nma8sen.css");
 
@@ -12,14 +12,18 @@
       --text: #021738;
       --surface: #ffffff;
       --surface-2: #f8fafc;
+      --surface-3: #eef4fb;
       --surface-border: #dbe2ec;
       --surface-hover: #eef7fc;
-      --shadow: 0 8px 20px rgba(2, 23, 56, 0.08);
       --muted-text: #4a5568;
       --footer-text: #8b98ab;
       --accent: #00c2e8;
+      --accent-text: #021738;
       --ok: #1a936f;
       --no: #a0aec0;
+      --card-dark: #021738;
+      --card-dark-2: #1e293b;
+      --shadow: 0 8px 20px rgba(2, 23, 56, 0.08);
     }
 
     [data-theme="dark"] {
@@ -27,60 +31,65 @@
       --text: #e6edf8;
       --surface: #14243f;
       --surface-2: #1a2f50;
+      --surface-3: #20395f;
       --surface-border: #29466f;
       --surface-hover: #1b3154;
-      --shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
       --muted-text: #b7c5d9;
       --footer-text: #8ca0bf;
       --accent: #53d5f1;
+      --accent-text: #021738;
       --ok: #67d3ae;
       --no: #8ca0bf;
+      --card-dark: #0f1b31;
+      --card-dark-2: #1a2f50;
+      --shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
     }
 
     * { box-sizing: border-box; }
+
     body {
-      font-family: 'omnes-pro', Helvetica, Arial, sans-serif;
-      font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
-      background-color: var(--bg);
-      color: var(--text);
       margin: 0;
       padding: 34px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
       transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     .container {
-      max-width: 980px;
       width: 100%;
+      max-width: 1060px;
       background: var(--surface);
-      padding: 32px;
+      border: 1px solid var(--surface-border);
       border-radius: 14px;
       box-shadow: var(--shadow);
-      border: 1px solid var(--surface-border);
+      padding: 32px;
     }
 
     .header {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: flex-start;
       gap: 16px;
       margin-bottom: 20px;
     }
 
     h1 {
       margin: 0;
-      color: var(--text);
-      font-size: 26px;
-      line-height: 1.15;
+      font-size: 28px;
+      line-height: 1.1;
     }
 
     .sub {
+      margin: 10px 0 0 0;
       color: var(--muted-text);
-      margin: 8px 0 0 0;
       font-size: 15px;
       line-height: 1.5;
+      max-width: 760px;
     }
 
     .theme-toggle {
@@ -105,74 +114,232 @@
 
     .card {
       border: 1px solid var(--surface-border);
-      border-radius: 10px;
+      border-radius: 12px;
       background: var(--surface-2);
       padding: 16px;
     }
 
     .card h2 {
-      margin: 0 0 10px 0;
-      font-size: 16px;
+      margin: 0 0 8px 0;
+      font-size: 17px;
       line-height: 1.3;
-      color: var(--text);
     }
 
-    .row {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .kv {
-      border: 1px solid var(--surface-border);
-      border-radius: 8px;
-      padding: 10px;
-      background: var(--surface);
-    }
-
-    .kv b {
-      display: block;
-      font-size: 12px;
+    .help {
+      margin: 0 0 14px 0;
       color: var(--muted-text);
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-    }
-
-    .kv code {
       font-size: 13px;
-      color: var(--text);
+      line-height: 1.5;
     }
 
-    .rule-list {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--muted-text);
-      line-height: 1.6;
-      font-size: 14px;
-    }
+    .template-list { list-style: none; margin: 0; padding: 0; }
 
-    .template-list { list-style: none; padding: 0; margin: 0; }
     .template-item {
       margin-bottom: 10px;
       border: 1px solid var(--surface-border);
       border-radius: 8px;
-      transition: all 0.2s ease;
       background: var(--surface);
+      transition: all 0.2s ease;
     }
-    .template-item:hover { border-color: var(--accent); background-color: var(--surface-hover); transform: translateY(-1px); }
+
+    .template-item:hover {
+      border-color: var(--accent);
+      background: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+
     .template-link {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 14px 16px;
+      align-items: center;
       text-decoration: none;
       color: inherit;
       gap: 12px;
+      padding: 14px 16px;
     }
-    .template-name { font-weight: 600; font-size: 16px; }
+
+    .template-name { font-size: 16px; font-weight: 600; }
     .template-desc { color: var(--muted-text); font-size: 13px; margin-top: 2px; }
-    .arrow { color: var(--accent); font-weight: bold; font-size: 18px; }
+    .arrow { color: var(--accent); font-size: 18px; font-weight: 700; }
+
+    .sample-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .token {
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+
+    .swatch {
+      height: 52px;
+      border-bottom: 1px solid var(--surface-border);
+    }
+
+    .token-info {
+      padding: 8px 10px;
+      font-size: 12px;
+      line-height: 1.4;
+      color: var(--muted-text);
+    }
+
+    .token-info b {
+      display: block;
+      font-size: 12px;
+      color: var(--text);
+    }
+
+    .type-specimens {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .type-row {
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 12px;
+    }
+
+    .type-meta {
+      font-size: 11px;
+      color: var(--muted-text);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 6px;
+    }
+
+    .demo-hero { font-size: 32px; line-height: 38px; font-weight: 700; }
+    .demo-h2 { font-size: 24px; line-height: 30px; font-weight: 700; }
+    .demo-h3 { font-size: 20px; line-height: 26px; font-weight: 700; }
+    .demo-body-lg { font-size: 16px; line-height: 26px; font-weight: 400; }
+    .demo-body { font-size: 15px; line-height: 24px; font-weight: 400; }
+    .demo-meta { font-size: 13px; line-height: 18px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--accent); }
+
+    .radius-demo {
+      border: 1px dashed var(--surface-border);
+      border-radius: 12px;
+      padding: 12px;
+      background: var(--surface);
+    }
+
+    .stack {
+      width: 100%;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    .stack-piece {
+      padding: 14px;
+      color: #ffffff;
+      font-size: 13px;
+      line-height: 1.4;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top { background: #021738; border-radius: 12px 12px 0 0; }
+    .mid { background: #1e293b; border-radius: 0; }
+    .bot { background: #021738; border-radius: 0 0 12px 12px; }
+
+    .spacing-demo {
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 12px;
+    }
+
+    .space-chip {
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #021738;
+      background: #c8f3fb;
+      border: 1px solid #84e4f4;
+      margin-bottom: 8px;
+    }
+
+    .space-chip:last-child { margin-bottom: 0; }
+
+    .button-row {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .btn-demo-wrap {
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 12px;
+    }
+
+    .btn-demo {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid transparent;
+      margin-bottom: 8px;
+    }
+
+    .btn-primary { background: #00c2e8; color: #021738; }
+    .btn-secondary { background: transparent; color: #021738; border-color: rgba(2, 23, 56, 0.3); }
+    .btn-dark-surface {
+      background: #021738;
+      border: 1px solid #29466f;
+      border-radius: 10px;
+      padding: 14px;
+    }
+
+    .btn-dark-surface .btn-secondary { color: #ffffff; border-color: rgba(255, 255, 255, 0.45); }
+
+    .recipe-grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .recipe {
+      border: 1px solid var(--surface-border);
+      border-radius: 10px;
+      background: var(--surface);
+      padding: 12px;
+    }
+
+    .recipe h3 {
+      margin: 0 0 6px 0;
+      font-size: 14px;
+    }
+
+    .flow {
+      font-size: 12px;
+      color: var(--muted-text);
+      line-height: 1.6;
+    }
+
+    .flow code {
+      background: var(--surface-3);
+      border: 1px solid var(--surface-border);
+      border-radius: 6px;
+      padding: 2px 6px;
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+      margin-right: 4px;
+      white-space: nowrap;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
 
     .table-wrap {
       overflow-x: auto;
@@ -193,20 +360,47 @@
       padding: 10px 12px;
       text-align: left;
       color: var(--text);
+      vertical-align: top;
     }
 
-    th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted-text); }
+    th {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted-text);
+    }
+
     tr:last-child td { border-bottom: none; }
     .yes { color: var(--ok); font-weight: 600; }
     .no { color: var(--no); }
 
-    .footer { margin-top: 22px; color: var(--footer-text); font-size: 12px; text-align: center; }
+    .rule-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted-text);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 22px;
+      color: var(--footer-text);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 920px) {
+      .sample-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .type-specimens { grid-template-columns: 1fr; }
+      .button-row { grid-template-columns: 1fr; }
+      .recipe-grid { grid-template-columns: 1fr; }
+    }
 
     @media (max-width: 760px) {
-      body { padding: 18px; }
-      .container { padding: 18px; }
-      .header { align-items: flex-start; flex-direction: column; }
-      .row { grid-template-columns: 1fr; }
+      body { padding: 16px; }
+      .container { padding: 16px; }
+      .header { flex-direction: column; }
+      .sample-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -215,7 +409,7 @@
     <div class="header">
       <div>
         <h1>Wolt Merchant Email System</h1>
-        <p class="sub">Template previews, modular system rules, and Customer.io build guidance in one place.</p>
+        <p class="sub">Visual design system guide with real examples: every token, style and layout rule is shown as a concrete specimen so builders can reproduce it in Customer.io without guesswork.</p>
       </div>
       <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark mode</button>
     </div>
@@ -230,7 +424,7 @@
                 <div class="template-name">Newsletter Template</div>
                 <div class="template-desc">Quarterly merchant newsletter with full module stack.</div>
               </div>
-              <span class="arrow">→</span>
+              <span class="arrow">-></span>
             </a>
           </li>
           <li class="template-item">
@@ -239,7 +433,7 @@
                 <div class="template-name">Product Launch Template</div>
                 <div class="template-desc">Hero + highlights + video + CTA campaign flow.</div>
               </div>
-              <span class="arrow">→</span>
+              <span class="arrow">-></span>
             </a>
           </li>
           <li class="template-item">
@@ -248,7 +442,7 @@
                 <div class="template-name">Operational / Alert Template</div>
                 <div class="template-desc">Action-required and status messaging format.</div>
               </div>
-              <span class="arrow">→</span>
+              <span class="arrow">-></span>
             </a>
           </li>
           <li class="template-item">
@@ -257,7 +451,7 @@
                 <div class="template-name">Component Library</div>
                 <div class="template-desc">All reusable modules for rapid campaign assembly.</div>
               </div>
-              <span class="arrow">→</span>
+              <span class="arrow">-></span>
             </a>
           </li>
           <li class="template-item">
@@ -266,50 +460,129 @@
                 <div class="template-name">Customer.io Builder Playbook</div>
                 <div class="template-desc">Step-by-step modular assembly guide and recipe map.</div>
               </div>
-              <span class="arrow">→</span>
+              <span class="arrow">-></span>
             </a>
           </li>
         </ul>
       </section>
 
       <section class="card">
-        <h2>Design Tokens</h2>
-        <div class="row">
-          <div class="kv"><b>Brand Font</b><code>'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif</code></div>
-          <div class="kv"><b>OpenType Sets</b><code>ss01 + ss05 + ss07</code></div>
-          <div class="kv"><b>Primary Surface</b><code>#021738</code></div>
-          <div class="kv"><b>Secondary Surface</b><code>#1e293b</code></div>
-          <div class="kv"><b>Body Background</b><code>#010e1f</code></div>
-          <div class="kv"><b>Accent</b><code>#00c2e8</code></div>
-          <div class="kv"><b>Max Width</b><code>640px</code></div>
-          <div class="kv"><b>Primary Button Radius</b><code>8px</code></div>
+        <h2>Color Tokens (With Live Swatches)</h2>
+        <p class="help">Use these exact values in MJML backgrounds, text, borders and CTA surfaces.</p>
+        <div class="sample-grid">
+          <div class="token">
+            <div class="swatch" style="background:#021738"></div>
+            <div class="token-info"><b>Primary Surface</b>#021738</div>
+          </div>
+          <div class="token">
+            <div class="swatch" style="background:#1e293b"></div>
+            <div class="token-info"><b>Secondary Surface</b>#1e293b</div>
+          </div>
+          <div class="token">
+            <div class="swatch" style="background:#00c2e8"></div>
+            <div class="token-info"><b>Accent / CTA</b>#00c2e8</div>
+          </div>
+          <div class="token">
+            <div class="swatch" style="background:#f0f1f4"></div>
+            <div class="token-info"><b>Page Background</b>#f0f1f4</div>
+          </div>
         </div>
       </section>
 
       <section class="card">
-        <h2>Typography Scale</h2>
-        <div class="row">
-          <div class="kv"><b>Display / Hero H1</b><code>32px / 38px / 700</code></div>
-          <div class="kv"><b>Section H2</b><code>24px / 30px / 700</code></div>
-          <div class="kv"><b>Subsection H3</b><code>20px / 26px / 700</code></div>
-          <div class="kv"><b>Body Large</b><code>16px / 26px / 400</code></div>
-          <div class="kv"><b>Body</b><code>15px / 24-28px / 400</code></div>
-          <div class="kv"><b>Meta / Eyebrow</b><code>13px / 18px / 600-700</code></div>
-          <div class="kv"><b>Small</b><code>12-14px / 20-22px</code></div>
-          <div class="kv"><b>Inter-card Gap</b><code>16px (major breaks 24px)</code></div>
+        <h2>Typography Scale (Real Specimens)</h2>
+        <p class="help">Omnes with stylistic sets enabled: <code>ss01 + ss05 + ss07</code>.</p>
+        <div class="type-specimens">
+          <div class="type-row">
+            <div class="type-meta">32 / 38 / 700 - Hero</div>
+            <div class="demo-hero">Grow faster on Wolt</div>
+          </div>
+          <div class="type-row">
+            <div class="type-meta">24 / 30 / 700 - Section H2</div>
+            <div class="demo-h2">What's new this month</div>
+          </div>
+          <div class="type-row">
+            <div class="type-meta">20 / 26 / 700 - Subheading</div>
+            <div class="demo-h3">Reach more local customers</div>
+          </div>
+          <div class="type-row">
+            <div class="type-meta">16 / 26 / 400 - Body Large</div>
+            <div class="demo-body-lg">Use this for intro copy under key headlines and high-priority explainer paragraphs.</div>
+          </div>
+          <div class="type-row">
+            <div class="type-meta">15 / 24 / 400 - Body</div>
+            <div class="demo-body">Use this for normal supporting copy blocks and feature descriptions across modules.</div>
+          </div>
+          <div class="type-row">
+            <div class="type-meta">13 / 18 / 700 - Eyebrow</div>
+            <div class="demo-meta">Merchant insights</div>
+          </div>
         </div>
       </section>
 
       <section class="card">
-        <h2>Corner-Radius Rules</h2>
-        <ol class="rule-list">
-          <li><code>Single card</code>: <code>border-radius="12px"</code>.</li>
-          <li><code>Stacked card top</code>: <code>12px 12px 0 0</code>.</li>
-          <li><code>Stacked card middle</code>: no radius.</li>
-          <li><code>Stacked card bottom</code>: <code>0 0 12px 12px</code>.</li>
-          <li>Never combine full-radius siblings with the same background directly on top of each other.</li>
-          <li>Internal media corners: standard image radius <code>10px</code>.</li>
-        </ol>
+        <h2>Corner Radius System (Visual)</h2>
+        <p class="help">When sections should read as one card, stack them with top/middle/bottom radius roles.</p>
+        <div class="radius-demo">
+          <div class="stack">
+            <div class="stack-piece top">Top section - <code>12px 12px 0 0</code></div>
+            <div class="stack-piece mid">Middle section - <code>0</code></div>
+            <div class="stack-piece bot">Bottom section - <code>0 0 12px 12px</code></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Spacing & Rhythm (Visual)</h2>
+        <p class="help">Use fixed spacing values so every newsletter feels consistent.</p>
+        <div class="spacing-demo">
+          <div class="space-chip" style="width: 24%;">24px - major section break</div>
+          <div class="space-chip" style="width: 18%;">16px - inter-card gap</div>
+          <div class="space-chip" style="width: 14%;">12px - micro spacing</div>
+          <div class="space-chip" style="width: 10%;">8px - label spacing</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Buttons (Exact Examples)</h2>
+        <p class="help">Primary and secondary button styles shown exactly as intended.</p>
+        <div class="button-row">
+          <div class="btn-demo-wrap">
+            <a class="btn-demo btn-primary" href="#">Explore now</a>
+            <div class="help">Primary CTA - 8px radius - cyan fill - dark text.</div>
+          </div>
+          <div class="btn-demo-wrap btn-dark-surface">
+            <a class="btn-demo btn-secondary" href="#">Read more</a>
+            <div class="help" style="color:rgba(255,255,255,0.72);">Secondary on dark surface - transparent with white stroke.</div>
+          </div>
+          <div class="btn-demo-wrap">
+            <a class="btn-demo btn-secondary" href="#">Open dashboard</a>
+            <div class="help">Secondary on light surface - transparent with dark stroke.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Module Recipes (Visual Flow)</h2>
+        <p class="help">Each use-case maps to a stable module flow. Build by swapping content, not structure.</p>
+        <div class="recipe-grid">
+          <div class="recipe">
+            <h3>Survey</h3>
+            <div class="flow"><code>Header</code><code>Hero</code><code>Content</code><code>CTA</code><code>Footer</code></div>
+          </div>
+          <div class="recipe">
+            <h3>Product Launch</h3>
+            <div class="flow"><code>Header</code><code>Hero</code><code>Highlights</code><code>Checklist</code><code>CTA</code><code>Footer</code></div>
+          </div>
+          <div class="recipe">
+            <h3>Growth / Upsell</h3>
+            <div class="flow"><code>Header</code><code>Hero</code><code>Content</code><code>Proof</code><code>CTA</code><code>Footer</code></div>
+          </div>
+          <div class="recipe">
+            <h3>Operational</h3>
+            <div class="flow"><code>Header</code><code>Operational Alert</code><code>CTA (opt.)</code><code>Footer</code></div>
+          </div>
+        </div>
       </section>
 
       <section class="card">
@@ -342,66 +615,19 @@
       </section>
 
       <section class="card">
-        <h2>Module Taxonomy (Standard)</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Module Group</th>
-                <th>Modules</th>
-                <th>Purpose</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Foundation</td><td>Header, Footer</td><td>Brand frame, legal baseline, universal consistency.</td></tr>
-              <tr><td>Lead Story</td><td>Hero Banner, Content Block</td><td>Primary campaign message and first CTA.</td></tr>
-              <tr><td>Proof & Education</td><td>Feature Highlights, Feature Grid, Two-Column Grid, Video Embed, Resource Highlight</td><td>Explain value, show workflow, reduce uncertainty.</td></tr>
-              <tr><td>Performance & Trust</td><td>ROI Stats, Social Proof, Testimonial</td><td>Demonstrate outcomes and merchant validation.</td></tr>
-              <tr><td>Action Modules</td><td>CTA Module, Referral Module, App Download</td><td>Drive conversion and follow-up behavior.</td></tr>
-              <tr><td>Lifecycle / Service</td><td>Operational Alert, Product Checklist, Webinar Module</td><td>Handle operational, onboarding, or event communications.</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>Current Versions Coverage</h2>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Current Category</th>
-                <th>Representative Pattern</th>
-                <th>Standard Module Recipe</th>
-                <th>Primary Template Base</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Survey emails</td><td>Short ask + incentive + proof card</td><td>Header -> Hero Banner -> Content Block -> Two-Column Grid -> CTA Module -> Footer</td><td>Newsletter / Library</td></tr>
-              <tr><td>Product emails</td><td>Feature announcement + how-to steps</td><td>Header -> Hero Banner -> Feature Highlights -> Product Checklist -> CTA Module -> Footer</td><td>Product Launch</td></tr>
-              <tr><td>Growth & upsell emails</td><td>Business opportunity + persuasive CTA</td><td>Header -> Hero Banner -> Content Block -> ROI Stats or Testimonial -> CTA Module -> Footer</td><td>Product Launch / Newsletter</td></tr>
-              <tr><td>Newsletters</td><td>Multi-section editorial + multiple offers</td><td>Header -> Hero Banner -> Content Block -> Feature Grid -> Resource Highlight -> CTA Module -> Footer</td><td>Newsletter</td></tr>
-              <tr><td>Operational emails</td><td>Critical account update or service notice</td><td>Header -> Operational Alert -> (Optional CTA Module) -> Footer</td><td>Operational</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="card">
         <h2>Customer.io Build Flow</h2>
         <ol class="rule-list">
-          <li>Pick one base recipe from the category matrix above (do not start from scratch).</li>
-          <li>Swap only module content first (copy, image, CTA target) before changing structure.</li>
-          <li>Keep component order stable unless campaign goal requires a change in narrative flow.</li>
-          <li>Use one primary CTA and one secondary CTA max per email to protect click clarity.</li>
-          <li>Validate in preview for dark/light and mobile before copying final HTML into Customer.io.</li>
-          <li>For new use-cases, add modules to Library first, then promote to a named template.</li>
+          <li>Pick one base recipe from this page (do not start from scratch).</li>
+          <li>Change copy, images, links and legal locale first; keep structure stable.</li>
+          <li>Use one primary CTA and max one secondary CTA.</li>
+          <li>Validate light and dark previews, then mobile.</li>
+          <li>Only create new modules in library if no existing one fits.</li>
         </ol>
       </section>
     </div>
   </div>
 
-  <div class="footer">Wolt B2B Creative Production · 2026</div>
+  <div class="footer">Wolt B2B Creative Production - 2026</div>
 
   <script>
     (function () {
