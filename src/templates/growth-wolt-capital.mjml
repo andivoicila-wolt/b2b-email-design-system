@@ -8,7 +8,13 @@
       <mj-body background-color="#f8f8f8" />
       <mj-section background-color="#ffffff" />
     </mj-attributes>
-    <mj-style>@import url("https://use.typekit.net/nma8sen.css");</mj-style>
+    <mj-style>
+      @import url("https://use.typekit.net/nma8sen.css");
+      body, table, td, p, a, h1, h2, h3, h4, span, div {
+        font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+        font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1;
+      }
+    </mj-style>
   </mj-head>
   <mj-body background-color="#f8f8f8" width="640px">
     <mj-section padding="20px 0 0 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
