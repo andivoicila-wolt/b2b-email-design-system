@@ -1,0 +1,17 @@
+<!-- ============================================
+     MODULE: Recovery Intro + CTA
+     Supports: Simple heading, subheading and CTA
+     ============================================ -->
+<mj-section background-color="#ffffff" padding="38px 34px" border-radius="12px">
+  <mj-column>
+    <mj-text font-size="36px" font-weight="700" color="#021738" line-height="42px" padding="0 0 10px 0" align="center">
+      This month your venue is no longer in Best of Wolt
+    </mj-text>
+    <mj-text font-size="18px" color="#4a5568" line-height="28px" padding="0 0 18px 0" align="center">
+      We know this is important. Performance is reviewed monthly and you can qualify again.
+    </mj-text>
+    <mj-button background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="13px 28px" padding="0" href="#">
+      Check your performance
+    </mj-button>
+  </mj-column>
+</mj-section>

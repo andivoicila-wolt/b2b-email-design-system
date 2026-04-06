@@ -14,11 +14,11 @@
     <mj-section padding="20px 0 0 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/header.mjml" />
     <mj-section padding="24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
+    <mj-include path="../components/recovery-intro-cta.mjml" />
+    <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/content-block.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
-    <mj-include path="../components/feature-highlights.mjml" />
-    <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
-    <mj-include path="../components/cta-module.mjml" />
+    <mj-include path="../components/image-copy-cta.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/footer.mjml" />
     <mj-section padding="0 0 24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>

@@ -1,0 +1,44 @@
+<!-- ============================================
+     MODULE: Six Step Cards
+     Supports: 6 image + copy cards for how-to flows
+     ============================================ -->
+<mj-section background-color="#f2f6fc" padding="34px 26px 16px 26px" border-radius="12px 12px 0 0">
+  <mj-column>
+    <mj-text font-size="24px" font-weight="700" color="#021738" line-height="30px" padding="0 0 8px 0" align="center">
+      Better pictures in a few steps
+    </mj-text>
+    <mj-text font-size="15px" color="#4a5568" line-height="24px" padding="0" align="center">
+      Follow this quick workflow to improve your menu photos.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section background-color="#f2f6fc" padding="0 16px 12px 16px">
+  <mj-column width="33.33%" padding="0 8px 12px 8px">
+    <mj-image src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=240&fit=crop" alt="Open merchant portal" border-radius="10px" padding="0 0 8px 0" />
+    <mj-text font-size="13px" color="#021738" line-height="18px" padding="0" align="center"><strong>1.</strong> Open Merchant Portal</mj-text>
+  </mj-column>
+  <mj-column width="33.33%" padding="0 8px 12px 8px">
+    <mj-image src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&h=240&fit=crop" alt="Go to listing" border-radius="10px" padding="0 0 8px 0" />
+    <mj-text font-size="13px" color="#021738" line-height="18px" padding="0" align="center"><strong>2.</strong> Go to Listing Manager</mj-text>
+  </mj-column>
+  <mj-column width="33.33%" padding="0 8px 12px 8px">
+    <mj-image src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=240&fit=crop" alt="Edit item" border-radius="10px" padding="0 0 8px 0" />
+    <mj-text font-size="13px" color="#021738" line-height="18px" padding="0" align="center"><strong>3.</strong> Select the dish</mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section background-color="#f2f6fc" padding="0 16px 32px 16px" border-radius="0 0 12px 12px">
+  <mj-column width="33.33%" padding="0 8px 12px 8px">
+    <mj-image src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?w=400&h=240&fit=crop" alt="Upload image" border-radius="10px" padding="0 0 8px 0" />
+    <mj-text font-size="13px" color="#021738" line-height="18px" padding="0" align="center"><strong>4.</strong> Upload a new photo</mj-text>
+  </mj-column>
+  <mj-column width="33.33%" padding="0 8px 12px 8px">
+    <mj-image src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=240&fit=crop" alt="Adjust crop" border-radius="10px" padding="0 0 8px 0" />
+    <mj-text font-size="13px" color="#021738" line-height="18px" padding="0" align="center"><strong>5.</strong> Adjust and crop</mj-text>
+  </mj-column>
+  <mj-column width="33.33%" padding="0 8px 12px 8px">
+    <mj-image src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=400&h=240&fit=crop" alt="Save" border-radius="10px" padding="0 0 8px 0" />
+    <mj-text font-size="13px" color="#021738" line-height="18px" padding="0" align="center"><strong>6.</strong> Save and publish</mj-text>
+  </mj-column>
+</mj-section>

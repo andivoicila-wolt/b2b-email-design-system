@@ -17,6 +17,8 @@
     <mj-section padding="24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/content-block.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
+    <mj-include path="../components/steps-process.mjml" />
+    <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/cta-module.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/footer.mjml" />

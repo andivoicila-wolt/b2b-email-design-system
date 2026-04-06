@@ -1,0 +1,19 @@
+<!-- ============================================
+     MODULE: Image + Copy + CTA
+     Supports: Supporting visual block with follow-up CTA
+     ============================================ -->
+<mj-section background-color="#ffffff" padding="0" border-radius="12px 12px 0 0">
+  <mj-column padding="0">
+    <mj-image src="assets/current-mapped/product-performance-recovery.png" alt="Merchant performance dashboard" padding="0" fluid-on-mobile="true" />
+  </mj-column>
+</mj-section>
+<mj-section background-color="#ffffff" padding="28px 34px 36px 34px" border-radius="0 0 12px 12px">
+  <mj-column>
+    <mj-text font-size="20px" color="#4a5568" line-height="30px" padding="0 0 16px 0" align="center">
+      Check your performance in Merchant Portal and see what it takes to qualify again.
+    </mj-text>
+    <mj-button background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="13px 28px" padding="0" href="#">
+      Check your performance
+    </mj-button>
+  </mj-column>
+</mj-section>
