@@ -253,21 +253,47 @@
       padding: 12px;
     }
 
-    .space-chip {
-      height: 28px;
-      display: flex;
+    .space-row {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 12px;
       align-items: center;
-      justify-content: center;
-      border-radius: 6px;
-      font-size: 11px;
-      font-weight: 600;
-      color: #021738;
-      background: #c8f3fb;
-      border: 1px solid #84e4f4;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
-    .space-chip:last-child { margin-bottom: 0; }
+    .space-row:last-child { margin-bottom: 0; }
+
+    .space-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .space-track {
+      height: 24px;
+      border-radius: 999px;
+      background: #e7f8fc;
+      border: 1px solid #b4ecf6;
+      position: relative;
+      padding: 4px 6px;
+      display: flex;
+      align-items: center;
+    }
+
+    .space-gap {
+      height: 12px;
+      border-radius: 999px;
+      background: #00c2e8;
+      min-width: 8px;
+    }
+
+    .space-note {
+      font-size: 11px;
+      color: var(--muted-text);
+      margin-left: 8px;
+      white-space: nowrap;
+    }
 
     .button-row {
       display: grid;
@@ -536,10 +562,22 @@
         <h2>Spacing & Rhythm (Visual)</h2>
         <p class="help">Use fixed spacing values so every newsletter feels consistent.</p>
         <div class="spacing-demo">
-          <div class="space-chip" style="width: 24%;">24px - major section break</div>
-          <div class="space-chip" style="width: 18%;">16px - inter-card gap</div>
-          <div class="space-chip" style="width: 14%;">12px - micro spacing</div>
-          <div class="space-chip" style="width: 10%;">8px - label spacing</div>
+          <div class="space-row">
+            <div class="space-label">24px</div>
+            <div class="space-track"><div class="space-gap" style="width: 24px;"></div><div class="space-note">Major section break</div></div>
+          </div>
+          <div class="space-row">
+            <div class="space-label">16px</div>
+            <div class="space-track"><div class="space-gap" style="width: 16px;"></div><div class="space-note">Inter-card gap</div></div>
+          </div>
+          <div class="space-row">
+            <div class="space-label">12px</div>
+            <div class="space-track"><div class="space-gap" style="width: 12px;"></div><div class="space-note">Micro spacing</div></div>
+          </div>
+          <div class="space-row">
+            <div class="space-label">8px</div>
+            <div class="space-track"><div class="space-gap" style="width: 8px;"></div><div class="space-note">Label spacing</div></div>
+          </div>
         </div>
       </section>
 
