@@ -13,16 +13,7 @@
   <mj-body background-color="#f8f8f8" width="640px">
     <mj-section padding="20px 0 0 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/header.mjml" />
-    <mj-section padding="24px 30px" background-color="#ffffff" border-radius="12px">
-      <mj-column>
-        <mj-text font-size="16px" line-height="28px" color="#4a5568" padding="0">
-          Dear partner,<br/><br/>
-          We're reaching out regarding a recent technical issue affecting order visibility for a short period. The issue is now resolved and we are implementing preventive actions.
-          <br/><br/>If you notice any unusual behavior, please contact support.
-          <br/><br/>Best regards,<br/>Wolt Team
-        </mj-text>
-      </mj-column>
-    </mj-section>
+    <mj-include path="../components/plain-notice-body.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/footer.mjml" />
     <mj-section padding="0 0 24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>

@@ -17,7 +17,9 @@
     <mj-section padding="24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/roi-stats.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
-    <mj-include path="../components/cta-module.mjml" />
+    <mj-include path="../components/text-link-cta.mjml" />
+    <mj-section padding="10px 0 0 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
+    <mj-include path="../components/disclaimer-note.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/footer.mjml" />
     <mj-section padding="0 0 24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>

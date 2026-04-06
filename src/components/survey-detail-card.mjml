@@ -1,0 +1,22 @@
+<!-- ============================================
+     MODULE: Survey Detail Card
+     Supports: Left image + right detail bullets + CTA
+     ============================================ -->
+<mj-section background-color="#ffffff" padding="0" border-radius="12px">
+  <mj-column width="46%" padding="0">
+    <mj-image src="assets/current-mapped/survey-feedback.png" alt="Survey visual" padding="0" fluid-on-mobile="true" />
+  </mj-column>
+  <mj-column width="54%" padding="22px 24px">
+    <mj-text font-size="22px" font-weight="700" color="#021738" line-height="28px" padding="0 0 10px 0">
+      Survey details:
+    </mj-text>
+    <mj-text font-size="16px" color="#021738" line-height="24px" padding="0 0 16px 0">
+      <strong>Time:</strong> ~10 minutes<br/>
+      <strong>Reward:</strong> 10 EUR giftcard<br/>
+      <strong>Privacy:</strong> 100% confidential
+    </mj-text>
+    <mj-button background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="12px 28px" padding="0" align="left" href="#">
+      Link to survey
+    </mj-button>
+  </mj-column>
+</mj-section>

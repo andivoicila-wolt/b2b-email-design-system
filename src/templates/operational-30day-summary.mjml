@@ -15,9 +15,9 @@
     <mj-include path="../components/header.mjml" />
     <mj-include path="../components/hero-banner.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
-    <mj-include path="../components/roi-stats.mjml" />
+    <mj-include path="../components/metrics-table-snapshot.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
-    <mj-include path="../components/content-block.mjml" />
+    <mj-include path="../components/support-strip.mjml" />
     <mj-section padding="16px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>
     <mj-include path="../components/footer.mjml" />
     <mj-section padding="0 0 24px 0" background-color="transparent"><mj-column><mj-spacer height="1px" /></mj-column></mj-section>

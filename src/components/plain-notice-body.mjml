@@ -1,0 +1,19 @@
+<!-- ============================================
+     MODULE: Plain Notice Body
+     Supports: Operational text-only notice with date/time details
+     ============================================ -->
+<mj-section background-color="#ffffff" padding="30px 26px" border-radius="12px">
+  <mj-column>
+    <mj-text font-size="18px" color="#021738" line-height="32px" padding="0">
+      Dear partner,
+      <br/><br/>
+      We're reaching out about a recent technical glitch that may have affected some of your Wolt orders. The issue occurred between 03.11.2025 at 09:56 and 03.11.2025 at 11:02.
+      <br/><br/>
+      The problem has been resolved, and we're taking proactive steps so it does not happen again. If you notice anything unusual, please get in touch.
+      <br/><br/>
+      We sincerely apologise for the inconvenience.
+      <br/><br/>
+      Best regards,<br/>Wolt Team
+    </mj-text>
+  </mj-column>
+</mj-section>

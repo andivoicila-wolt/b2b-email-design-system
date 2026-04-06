@@ -1,0 +1,31 @@
+<!-- ============================================
+     MODULE: Metrics Table Snapshot
+     Supports: 2-column key-value operational table
+     ============================================ -->
+<mj-section background-color="#ffffff" padding="40px 30px 20px 30px" border-radius="12px 12px 0 0">
+  <mj-column>
+    <mj-text font-size="26px" font-weight="700" color="#021738" line-height="32px" padding="0 0 10px 0">
+      Last 30 days summary
+    </mj-text>
+    <mj-text font-size="16px" color="#4a5568" line-height="24px" padding="0">
+      A quick snapshot of your venue performance.
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section background-color="#ffffff" padding="0 20px 28px 20px" border-radius="0 0 12px 12px">
+  <mj-column>
+    <mj-table padding="0" border="0" cellspacing="0" cellpadding="0">
+      <tr><td colspan="2" style="border-top:1px solid #dce6f2; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+      <tr><td style="padding:10px 0; font:600 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">Number of orders</td><td style="padding:10px 0; text-align:right; font:700 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">0</td></tr>
+      <tr><td colspan="2" style="border-top:1px solid #dce6f2; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+      <tr><td style="padding:10px 0; font:600 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">Total order value</td><td style="padding:10px 0; text-align:right; font:700 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">€0</td></tr>
+      <tr><td colspan="2" style="border-top:1px solid #dce6f2; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+      <tr><td style="padding:10px 0; font:600 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">Rejected orders</td><td style="padding:10px 0; text-align:right; font:700 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">1</td></tr>
+      <tr><td colspan="2" style="border-top:1px solid #dce6f2; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+      <tr><td style="padding:10px 0; font:600 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">Order rejection rate</td><td style="padding:10px 0; text-align:right; font:700 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">1%</td></tr>
+      <tr><td colspan="2" style="border-top:1px solid #dce6f2; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+      <tr><td style="padding:10px 0; font:600 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">Average rating</td><td style="padding:10px 0; text-align:right; font:700 15px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;">0%</td></tr>
+      <tr><td colspan="2" style="border-top:1px solid #dce6f2; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+    </mj-table>
+  </mj-column>
+</mj-section>

@@ -1,0 +1,38 @@
+<!-- ============================================
+     MODULE: Steps / Process
+     Supports: Numbered steps with short descriptions
+     ============================================ -->
+<mj-section background-color="#ffffff" padding="0" border-radius="12px">
+  <mj-column padding="0">
+    <mj-image src="assets/current-mapped/growth-wolt-capital.png" alt="Wolt Capital visual" padding="0" fluid-on-mobile="true" />
+  </mj-column>
+</mj-section>
+<mj-section background-color="#00c2e8" padding="16px 32px" border-radius="12px 12px 0 0">
+  <mj-column>
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24px" font-weight="700" color="#ffffff" line-height="30px" padding="0">
+      Wolt Capital makes it fast and easy:
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section background-color="#ffffff" padding="28px 32px 12px 32px" border-radius="0 0 12px 12px">
+  <mj-column>
+    <mj-table padding="0">
+      <tr>
+        <td style="width:28px; padding:0 12px 12px 0; vertical-align:top;"><span style="display:inline-block; width:22px; height:22px; border-radius:50%; background:#00c2e8; color:#ffffff; text-align:center; font:700 13px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;">1</span></td>
+        <td style="padding:0 0 12px 0; font:400 18px/24px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;"><strong>Check your offer</strong> in the Merchant Portal.</td>
+      </tr>
+      <tr>
+        <td style="width:28px; padding:0 12px 12px 0; vertical-align:top;"><span style="display:inline-block; width:22px; height:22px; border-radius:50%; background:#00c2e8; color:#ffffff; text-align:center; font:700 13px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;">2</span></td>
+        <td style="padding:0 0 12px 0; font:400 18px/24px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;"><strong>Select how much you want to take</strong> and get funds in 1-2 business days.</td>
+      </tr>
+      <tr>
+        <td style="width:28px; padding:0 12px 12px 0; vertical-align:top;"><span style="display:inline-block; width:22px; height:22px; border-radius:50%; background:#00c2e8; color:#ffffff; text-align:center; font:700 13px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;">3</span></td>
+        <td style="padding:0 0 12px 0; font:400 18px/24px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;"><strong>Pay a one-time fee</strong> with no interest or hidden charges.</td>
+      </tr>
+      <tr>
+        <td style="width:28px; padding:0 12px 0 0; vertical-align:top;"><span style="display:inline-block; width:22px; height:22px; border-radius:50%; background:#00c2e8; color:#ffffff; text-align:center; font:700 13px/22px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;">4</span></td>
+        <td style="padding:0; font:400 18px/24px 'omnes-pro','Avenir Next','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif; color:#021738;"><strong>Repayment is automatic</strong> through your Wolt sales over up to 12 months.</td>
+      </tr>
+    </mj-table>
+  </mj-column>
+</mj-section>

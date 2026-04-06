@@ -147,6 +147,62 @@
     <!-- 14. FOOTER -->
     <mj-include path="../components/footer.mjml" />
 
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 15. STEPS / PROCESS -->
+    <mj-include path="../components/steps-process.mjml" />
+
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 16. METRICS TABLE SNAPSHOT -->
+    <mj-include path="../components/metrics-table-snapshot.mjml" />
+
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 17. SURVEY DETAIL CARD -->
+    <mj-include path="../components/survey-detail-card.mjml" />
+
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 18. RESOURCE CARDS 2-UP -->
+    <mj-include path="../components/resource-cards-2up.mjml" />
+
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 19. SUPPORT STRIP -->
+    <mj-include path="../components/support-strip.mjml" />
+
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 20. TEXT LINK CTA -->
+    <mj-include path="../components/text-link-cta.mjml" />
+
+    <mj-section padding="10px 0 0 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 21. DISCLAIMER NOTE -->
+    <mj-include path="../components/disclaimer-note.mjml" />
+
+    <mj-section padding="16px 0" background-color="transparent">
+      <mj-column><mj-spacer height="1px" /></mj-column>
+    </mj-section>
+
+    <!-- 22. PLAIN NOTICE BODY -->
+    <mj-include path="../components/plain-notice-body.mjml" />
+
     <mj-section padding="0 0 24px 0" background-color="transparent">
       <mj-column><mj-spacer height="1px" /></mj-column>
     </mj-section>
