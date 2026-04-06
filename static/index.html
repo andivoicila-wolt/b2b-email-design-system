@@ -274,17 +274,17 @@
     }
 
     .space-layout {
-      border: 1px dashed #9ddfed;
+      border: 1px dashed var(--surface-border);
       border-radius: 8px;
-      background: #eefbfe;
+      background: var(--surface-3);
       padding: 8px;
     }
 
     .space-section {
       height: 24px;
       border-radius: 6px;
-      background: #c8f3fb;
-      border: 1px solid #84e4f4;
+      background: color-mix(in srgb, var(--accent) 18%, #ffffff);
+      border: 1px solid color-mix(in srgb, var(--accent) 42%, #ffffff);
     }
 
     .space-gap {
@@ -340,7 +340,7 @@
     .btn-secondary { background: transparent; color: #021738; border-color: rgba(2, 23, 56, 0.3); }
     .btn-dark-surface {
       background: #021738;
-      border: 1px solid #29466f;
+      border: 1px solid var(--surface-border);
       border-radius: 10px;
       padding: 14px;
     }
