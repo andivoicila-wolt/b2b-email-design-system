@@ -72,7 +72,23 @@
       }
     
 
-      a[x-apple-data-detectors] {
+      img {
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+      }
+
+      table, td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      a[x-apple-data-detectors],
+      #MessageViewBody a,
+      u + .body a,
+      a[href^="tel"],
+      a[href^="sms"] {
         color: inherit !important;
         text-decoration: none !important;
         font-size: inherit !important;
@@ -81,7 +97,10 @@
         line-height: inherit !important;
       }
 
-       only screen and (max-width:480px) {
+      .im {
+        color: inherit !important;
+      }
+        @media only screen and (max-width:480px) {
         td[style*="padding: 48px 40px"],
         td[style*="padding: 40px 40px 44px 40px"],
         td[style*="padding: 44px 40px"],
