@@ -34,6 +34,12 @@
       }
     </mj-style>
     <mj-style inline="inline">
+      body, table, td, p, a, h1, h2, h3, h4, span, div {
+        font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1 !important;
+        -webkit-font-feature-settings: "ss01" 1, "ss05" 1, "ss07" 1 !important;
+      }
+    </mj-style>
+    <mj-style inline="inline">
       a { text-decoration: none; color: #00c2e8; }
       .body-text a { color: #00c2e8; }
     </mj-style>
