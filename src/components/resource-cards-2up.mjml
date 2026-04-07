@@ -17,12 +17,12 @@
     <mj-image src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=360&fit=crop" alt="Success stories" border-radius="10px" padding="0 0 12px 0" fluid-on-mobile="true" />
     <mj-text font-size="18px" font-weight="700" color="#021738" line-height="24px" padding="0 0 6px 0">Success stories</mj-text>
     <mj-text font-size="14px" color="#4a5568" line-height="22px" padding="0 0 12px 0">See how merchants improved sales with simple operational changes.</mj-text>
-    <mj-button background-color="#ffffff" color="#021738" border="2px solid #00c2e8" font-size="14px" font-weight="700" border-radius="8px" inner-padding="10px 20px" padding="0" href="#">See the story</mj-button>
+    <mj-button background-color="transparent" color="#021738" border="2px solid #021738" font-size="14px" font-weight="700" border-radius="8px" inner-padding="10px 20px" padding="0" href="#">See the story</mj-button>
   </mj-column>
   <mj-column width="50%" padding="0 10px 0 10px">
     <mj-image src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=360&fit=crop" alt="Merchant blog" border-radius="10px" padding="0 0 12px 0" fluid-on-mobile="true" />
     <mj-text font-size="18px" font-weight="700" color="#021738" line-height="24px" padding="0 0 6px 0">Merchant blog</mj-text>
     <mj-text font-size="14px" color="#4a5568" line-height="22px" padding="0 0 12px 0">Read practical growth ideas to run your business more efficiently.</mj-text>
-    <mj-button background-color="#ffffff" color="#021738" border="2px solid #00c2e8" font-size="14px" font-weight="700" border-radius="8px" inner-padding="10px 20px" padding="0" href="#">Visit the blog</mj-button>
+    <mj-button background-color="transparent" color="#021738" border="2px solid #021738" font-size="14px" font-weight="700" border-radius="8px" inner-padding="10px 20px" padding="0" href="#">Visit the blog</mj-button>
   </mj-column>
 </mj-section>

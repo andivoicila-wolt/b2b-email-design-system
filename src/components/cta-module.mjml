@@ -14,12 +14,12 @@
 </mj-section>
 <mj-section background-color="#ffffff" padding="0 40px 48px 40px" border-radius="0 0 12px 12px">
   <mj-column width="50%">
-    <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="600" border-radius="8px" inner-padding="14px 32px" padding="0" align="center" href="#">
+    <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0" align="center" href="#">
       Get started
     </mj-button>
   </mj-column>
   <mj-column width="50%">
-    <mj-button background-color="transparent" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="600" border="2px solid #4a5568" border-radius="8px" inner-padding="14px 32px" padding="0" align="center" href="#">
+    <mj-button background-color="transparent" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border="2px solid #021738" border-radius="8px" inner-padding="14px 32px" padding="0" align="center" href="#">
       Learn more
     </mj-button>
   </mj-column>
