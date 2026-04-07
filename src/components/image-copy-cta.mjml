@@ -12,7 +12,7 @@
     <mj-text font-size="20px" color="#4a5568" line-height="30px" padding="0 0 16px 0" align="center">
       Check your performance in Merchant Portal and see what it takes to qualify again.
     </mj-text>
-    <mj-button background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="13px 28px" padding="0" href="#">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="13px 28px" padding="0" href="#">
       Check your performance
     </mj-button>
   </mj-column>

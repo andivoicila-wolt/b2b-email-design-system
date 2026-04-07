@@ -16,7 +16,7 @@
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="400" color="#4a5568" line-height="26px" padding="0 0 28px 0">
       The latest product updates, tips, and insights to help you grow on Wolt.
     </mj-text>
-    <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0" href="https://merchant.wolt.com">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0" href="https://merchant.wolt.com">
       Explore now →
     </mj-button>
   </mj-column>

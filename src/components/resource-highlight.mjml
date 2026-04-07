@@ -13,7 +13,7 @@
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="700" color="#021738" line-height="26px" padding="0 0 16px 0">
       Mastering Meta Ads for Local Restaurants
     </mj-text>
-    <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0" align="left" href="#">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0" align="left" href="#">
       Download PDF →
     </mj-button>
   </mj-column>

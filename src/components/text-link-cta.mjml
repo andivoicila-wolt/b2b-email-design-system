@@ -4,7 +4,7 @@
      ============================================ -->
 <mj-section background-color="#ffffff" padding="40px 30px" border-radius="12px">
   <mj-column>
-    <mj-button background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0 0 14px 0" href="#">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0 0 14px 0" href="#">
       Start a campaign
     </mj-button>
     <mj-text font-size="18px" font-weight="700" color="#00c2e8" line-height="24px" padding="0" align="center">

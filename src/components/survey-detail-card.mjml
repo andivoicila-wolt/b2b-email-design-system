@@ -15,7 +15,7 @@
       <strong>Reward:</strong> 10 EUR giftcard<br/>
       <strong>Privacy:</strong> 100% confidential
     </mj-text>
-    <mj-button background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="12px 28px" padding="0" align="left" href="#">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-size="16px" font-weight="700" border-radius="8px" inner-padding="12px 28px" padding="0" align="left" href="#">
       Link to survey
     </mj-button>
   </mj-column>

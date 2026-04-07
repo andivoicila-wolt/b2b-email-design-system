@@ -44,7 +44,7 @@
 
   <!-- CTA -->
   <mj-column width="100%">
-    <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0" align="left" href="#">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" border-radius="8px" inner-padding="14px 32px" padding="0" align="left" href="#">
       Register now
     </mj-button>
   </mj-column>

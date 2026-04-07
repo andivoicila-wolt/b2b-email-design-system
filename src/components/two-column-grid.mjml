@@ -15,7 +15,7 @@
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15px" font-weight="400" color="#4a5568" line-height="24px" padding="0 0 20px 0">
       Boost your visibility and drive more orders with targeted campaigns directly on the Wolt app.
     </mj-text>
-    <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" border-radius="8px" inner-padding="12px 24px" padding="0" align="left" href="#">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" border-radius="8px" inner-padding="12px 24px" padding="0" align="left" href="#">
       Get started
     </mj-button>
   </mj-column>
@@ -35,7 +35,7 @@
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15px" font-weight="400" color="#4a5568" line-height="24px" padding="0 0 20px 0">
       Track your sales, busiest hours, and top-performing items — all from the Merchant Portal.
     </mj-text>
-    <mj-button background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" border-radius="8px" inner-padding="12px 24px" padding="0" align="left" href="#">
+    <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" border-radius="8px" inner-padding="12px 24px" padding="0" align="left" href="#">
       View analytics
     </mj-button>
   </mj-column>
