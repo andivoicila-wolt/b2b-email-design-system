@@ -12,9 +12,9 @@
     </mj-text>
   </mj-column>
   <mj-column width="50%" vertical-align="middle" padding="0 8px 8px 8px">
-    <mj-image src="https://cdn.wolt.com/assets/images/app-store-badge-en.png" alt="Download on App Store" width="135px" align="center" padding="0" href="https://apple.co/merchant-app" />
+    <mj-image src="assets/icons/source/svg/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on App Store" width="135px" align="center" padding="0" href="https://apple.co/merchant-app" />
   </mj-column>
   <mj-column width="50%" vertical-align="middle" padding="0 8px 8px 8px">
-    <mj-image src="https://cdn.wolt.com/assets/images/google-play-badge-en.png" alt="Get it on Google Play" width="153px" align="center" padding="0" href="https://bit.ly/merchant-app-android" />
+    <mj-image src="assets/icons/source/png/google-play-badge.png" alt="Get it on Google Play" width="153px" align="center" padding="0" href="https://bit.ly/merchant-app-android" />
   </mj-column>
 </mj-section>
