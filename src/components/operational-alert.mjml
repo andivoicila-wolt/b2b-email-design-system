@@ -5,7 +5,7 @@
 <mj-section background-color="#ffffff" padding="28px 32px" border-radius="10px" border="1px solid #ff834f">
   <mj-group>
   <mj-column width="10%" vertical-align="top" padding="0">
-    <mj-image src="assets/icons/email/png/alert-warning.png" alt="Warning" width="24px" padding="2px 0 0 0" align="center" />
+    <mj-image src="assets/icons/email/png/alert-warning.png" alt="Warning" width="60px" padding="2px 0 0 0" align="center" />
   </mj-column>
   <mj-column width="90%" padding="0 0 0 8px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#ff834f" line-height="22px" padding="0 0 8px 0">
@@ -30,7 +30,7 @@
 <mj-section background-color="#ffffff" padding="28px 32px" border-radius="10px" border="1px solid #00c2e8">
   <mj-group>
   <mj-column width="10%" vertical-align="top" padding="0">
-    <mj-image src="assets/icons/email/png/alert-info.png" alt="Info" width="24px" padding="2px 0 0 0" align="center" />
+    <mj-image src="assets/icons/email/png/alert-info.png" alt="Info" width="60px" padding="2px 0 0 0" align="center" />
   </mj-column>
   <mj-column width="90%" padding="0 0 0 8px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#00c2e8" line-height="22px" padding="0 0 8px 0">
