@@ -21,25 +21,15 @@
   </mj-column>
   
   <!-- Info Row: Time & Location -->
-  <mj-column width="100%" padding="0 0 32px 0">
-    <mj-table padding="0">
-      <tr>
-        <td style="padding: 0 20px 0 0; vertical-align: middle;">
-          <table border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td style="color: #00c2e8; font-size: 16px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700;">🕒 14:00 – 15:00 EET</td>
-            </tr>
-          </table>
-        </td>
-        <td style="padding: 0; vertical-align: middle;">
-          <table border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td style="color: #00c2e8; font-size: 16px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 700;">💻 Online via Zoom</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </mj-table>
+  <mj-column width="50%" padding="0 10px 24px 0">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#00c2e8" line-height="22px" padding="0">
+      14:00 - 15:00 EET
+    </mj-text>
+  </mj-column>
+  <mj-column width="50%" padding="0 0 24px 10px">
+    <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#00c2e8" line-height="22px" padding="0">
+      Online via Zoom
+    </mj-text>
   </mj-column>
 
   <!-- CTA -->

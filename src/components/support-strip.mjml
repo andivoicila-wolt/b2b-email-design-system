@@ -3,11 +3,13 @@
      Supports: Compact help CTA strip above footer
      ============================================ -->
 <mj-section background-color="#00c2e8" padding="18px 24px" border-radius="12px">
+  <mj-group>
   <mj-column width="16%" vertical-align="middle">
-    <mj-image src="assets/icons/email/png/highlight-analytics.png" alt="Support icon" width="34px" padding="0" align="left" />
+    <mj-image src="assets/icons/email/png/highlight-analytics.png" alt="Support icon" width="34px" padding="0" align="center" />
   </mj-column>
   <mj-column width="84%" vertical-align="middle" padding="0 0 0 6px">
     <mj-text font-size="22px" font-weight="700" color="#ffffff" line-height="24px" padding="0 0 4px 0">Need help?</mj-text>
     <mj-text font-size="15px" font-weight="600" color="#ffffff" line-height="22px" padding="0">Log in to Merchant Portal and contact Support from your profile.</mj-text>
   </mj-column>
+  </mj-group>
 </mj-section>

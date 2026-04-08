@@ -26,8 +26,11 @@
   <mj-column><mj-divider border-color="#4a5568" border-width="1px" padding="0" /></mj-column>
 </mj-section>
 
-<!-- Variant B: Text Left, Image Right -->
+<!-- Variant B: Stable image-first stack for mobile consistency -->
 <mj-section background-color="#ffffff" padding="36px 30px" direction="ltr" border-radius="0 0 12px 12px">
+  <mj-column width="48%" padding="0 0 0 10px">
+    <mj-image src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics feature" border-radius="10px" padding="0" fluid-on-mobile="true" />
+  </mj-column>
   <mj-column width="52%" vertical-align="middle" padding="0 10px 0 0">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20px" font-weight="700" color="#021738" line-height="26px" padding="0 0 12px 0">
       Analytics that help you grow
@@ -38,8 +41,5 @@
     <mj-button css-class="m-btn" background-color="#00c2e8" color="#021738" font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14px" font-weight="700" border-radius="8px" inner-padding="12px 24px" padding="0" align="left" href="#" line-height="20px">
       View analytics
     </mj-button>
-  </mj-column>
-  <mj-column width="48%" padding="0 0 0 10px">
-    <mj-image src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics feature" border-radius="10px" padding="0" fluid-on-mobile="true" />
   </mj-column>
 </mj-section>

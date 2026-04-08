@@ -14,8 +14,9 @@
   </mj-column>
 </mj-section>
 <mj-section background-color="#ffffff" padding="0 40px 44px 40px" border-radius="0 0 12px 12px">
+  <mj-group>
   <mj-column width="15%" vertical-align="middle">
-    <mj-image src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Customer photo" width="56px" border-radius="50px" padding="0" />
+    <mj-image src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Customer photo" width="56px" border-radius="50px" padding="0" align="center" />
   </mj-column>
   <mj-column width="85%" vertical-align="middle" padding="0 0 0 10px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16px" font-weight="700" color="#021738" line-height="20px" padding="0 0 2px 0">
@@ -25,4 +26,5 @@
       Owner, Ravintola Helsinki · <a href="#" style="color:#00c2e8; text-decoration:none;">Read case study →</a>
     </mj-text>
   </mj-column>
+  </mj-group>
 </mj-section>

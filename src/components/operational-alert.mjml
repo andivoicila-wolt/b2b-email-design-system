@@ -3,8 +3,9 @@
      Supports: Warning/info icon, bold header, body text, action button
      ============================================ -->
 <mj-section background-color="#ffffff" padding="28px 32px" border-radius="10px" border="1px solid #ff834f">
+  <mj-group>
   <mj-column width="10%" vertical-align="top" padding="0">
-    <mj-image src="assets/icons/email/png/alert-warning.png" alt="Warning" width="24px" padding="0" align="center" />
+    <mj-image src="assets/icons/email/png/alert-warning.png" alt="Warning" width="24px" padding="2px 0 0 0" align="center" />
   </mj-column>
   <mj-column width="90%" padding="0 0 0 8px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#ff834f" line-height="22px" padding="0 0 8px 0">
@@ -17,6 +18,7 @@
       Update now
     </mj-button>
   </mj-column>
+  </mj-group>
 </mj-section>
 
 <!-- Spacer / Divider between alerts if used together -->
@@ -26,8 +28,9 @@
 
 <!-- Info variant: Deep Blue -->
 <mj-section background-color="#ffffff" padding="28px 32px" border-radius="10px" border="1px solid #00c2e8">
+  <mj-group>
   <mj-column width="10%" vertical-align="top" padding="0">
-    <mj-image src="assets/icons/email/png/alert-info.png" alt="Info" width="24px" padding="0" align="center" />
+    <mj-image src="assets/icons/email/png/alert-info.png" alt="Info" width="24px" padding="2px 0 0 0" align="center" />
   </mj-column>
   <mj-column width="90%" padding="0 0 0 8px">
     <mj-text font-family="'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17px" font-weight="700" color="#00c2e8" line-height="22px" padding="0 0 8px 0">
@@ -37,4 +40,5 @@
       The Merchant Portal will be briefly unavailable. Orders will continue processing normally on the Wolt app.
     </mj-text>
   </mj-column>
+  </mj-group>
 </mj-section>
