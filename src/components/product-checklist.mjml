@@ -10,19 +10,19 @@
     <mj-table padding="0">
       <tr style="border-bottom: 1px solid #4a5568;">
         <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
-        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">Real-time order tracking</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #021738;">Real-time order tracking</td>
       </tr>
       <tr style="border-bottom: 1px solid #4a5568;">
         <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
-        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">Menu editor with instant sync</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #021738;">Menu editor with instant sync</td>
       </tr>
       <tr style="border-bottom: 1px solid #4a5568;">
         <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
-        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">In-depth sales analytics</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #021738;">In-depth sales analytics</td>
       </tr>
       <tr>
         <td style="padding: 16px 0; font-size: 18px; color: #00c2e8;">✅</td>
-        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">24/7 Merchant Support</td>
+        <td style="padding: 16px 0 16px 12px; font-family: 'omnes-pro', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; color: #021738;">24/7 Merchant Support</td>
       </tr>
     </mj-table>
   </mj-column>
