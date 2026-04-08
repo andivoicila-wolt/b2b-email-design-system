@@ -112,6 +112,52 @@
       margin-top: 14px;
     }
 
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 2px 0 8px 0;
+    }
+
+    .quick-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      border: 1px solid var(--surface-border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .quick-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .group-marker {
+      border: 1px solid var(--surface-border);
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+
+    .group-marker h2 {
+      margin: 0 0 4px 0;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .group-note {
+      margin: 0;
+      color: var(--muted-text);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
     .card {
       border: 1px solid var(--surface-border);
       border-radius: 12px;
@@ -458,8 +504,20 @@
       <button id="theme-toggle" class="theme-toggle" type="button">Switch to dark mode</button>
     </div>
 
+    <nav class="quick-nav" aria-label="Page sections">
+      <a class="quick-link" href="#group-examples">Examples</a>
+      <a class="quick-link" href="#group-design-system">Design System</a>
+      <a class="quick-link" href="#group-components">Components</a>
+      <a class="quick-link" href="#group-implementation">Customer.io Implementation</a>
+    </nav>
+
     <div class="grid">
-      <section class="card">
+      <section class="group-marker" id="group-examples">
+        <h2>Examples</h2>
+        <p class="group-note">Preview, compare and validate the templates that teams use day to day.</p>
+      </section>
+
+      <section class="card" id="examples-overview">
         <h2>Preview Templates</h2>
         <ul class="template-list">
           <li class="template-item">
@@ -499,15 +557,6 @@
             </a>
           </li>
           <li class="template-item">
-            <a href="playbook.html" class="template-link">
-              <div>
-                <div class="template-name">Customer.io Builder Playbook</div>
-                <div class="template-desc">Step-by-step modular assembly guide and recipe map.</div>
-              </div>
-              <span class="arrow">-></span>
-            </a>
-          </li>
-          <li class="template-item">
             <a href="compare.html" class="template-link">
               <div>
                 <div class="template-name">Current vs Revised Mapping</div>
@@ -519,7 +568,7 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="card" id="examples-mapped">
         <h2>Recreated Current Emails</h2>
         <p class="help">One recreated template per example in <code>current_versions/</code>, built from the modular component system for coverage gap checks.</p>
         <ul class="template-list">
@@ -616,7 +665,12 @@
         </ul>
       </section>
 
-      <section class="card">
+      <section class="group-marker" id="group-design-system">
+        <h2>Design System</h2>
+        <p class="group-note">Core visual rules: colors, typography, spacing, radii and button behavior.</p>
+      </section>
+
+      <section class="card" id="design-colors">
         <h2>Color Tokens (With Live Swatches)</h2>
         <p class="help">Use these exact values in MJML backgrounds, text, borders and CTA surfaces. Secondary surfaces are derived from Blueberry Blue + Wolt Blue tinting.</p>
         <div class="sample-grid">
@@ -639,7 +693,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" id="design-typography">
         <h2>Typography Scale (Real Specimens)</h2>
         <p class="help">Omnes with stylistic sets enabled: <code>ss01 + ss05 + ss07</code>.</p>
         <div class="type-specimens">
@@ -670,7 +724,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" id="design-radius">
         <h2>Corner Radius System (Visual)</h2>
         <p class="help">When sections should read as one card, stack them with top/middle/bottom radius roles.</p>
         <div class="radius-demo">
@@ -682,7 +736,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" id="design-spacing">
         <h2>Spacing & Rhythm (Visual)</h2>
         <p class="help">This is the vertical distance between two stacked sections/cards in the email layout.</p>
         <div class="spacing-demo">
@@ -727,7 +781,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" id="design-buttons">
         <h2>Buttons (Exact Examples)</h2>
         <p class="help">Primary and secondary button styles shown exactly as intended.</p>
         <div class="button-row">
@@ -746,7 +800,12 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="group-marker" id="group-components">
+        <h2>Components</h2>
+        <p class="group-note">Reusable module patterns and where each section is available.</p>
+      </section>
+
+      <section class="card" id="components-recipes">
         <h2>Module Recipes (Visual Flow)</h2>
         <p class="help">Each use-case maps to a stable module flow. Build by swapping content, not structure.</p>
         <div class="recipe-grid">
@@ -769,7 +828,7 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="card" id="components-availability">
         <h2>Available Sections</h2>
         <div class="table-wrap">
           <table>
@@ -806,7 +865,27 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="group-marker" id="group-implementation">
+        <h2>Customer.io Implementation</h2>
+        <p class="group-note">Practical build rules and the playbook used by marketers to assemble newsletters quickly.</p>
+      </section>
+
+      <section class="card" id="implementation-flow">
+        <h2>Implementation Resources</h2>
+        <ul class="template-list">
+          <li class="template-item">
+            <a href="playbook.html" class="template-link">
+              <div>
+                <div class="template-name">Customer.io Builder Playbook</div>
+                <div class="template-desc">Step-by-step modular assembly guide and recipe map.</div>
+              </div>
+              <span class="arrow">-></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" id="implementation-rules">
         <h2>Customer.io Build Flow</h2>
         <ol class="rule-list">
           <li>Pick one base recipe from this page (do not start from scratch).</li>

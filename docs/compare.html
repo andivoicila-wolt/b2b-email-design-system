@@ -356,6 +356,7 @@
 
       function render() {
         var audit = loadAudit();
+        var cacheBust = Date.now();
         rows.innerHTML = mappings.map(function (m) {
           var id = m[2];
           var rowAudit = ensureRow(audit, id);
@@ -367,7 +368,7 @@
             '<section class="row">',
             '  <div class="row-head">',
             '    <div class="name">' + m[0] + '</div>',
-            '    <a class="btn" href="preview.html?template=' + encodeURIComponent(m[2]) + '">Open in full preview</a>',
+            '    <a class="btn" href="preview.html?template=' + encodeURIComponent(m[2]) + '&v=' + cacheBust + '">Open in full preview</a>',
             '  </div>',
             '  <div class="grid">',
             '    <div class="pane">',
@@ -376,7 +377,7 @@
             '    </div>',
             '    <div class="pane">',
             '      <div class="pane-title">Revised Modular Version</div>',
-            '      <div class="revised"><iframe title="' + m[0] + ' revised" src="' + m[2] + '"></iframe></div>',
+            '      <div class="revised"><iframe title="' + m[0] + ' revised" src="' + m[2] + '?v=' + cacheBust + '"></iframe></div>',
             '    </div>',
             '    <div class="pane">',
             '      <div class="pane-title">Audit Checklist</div>',
